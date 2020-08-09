@@ -1,5 +1,5 @@
 title: Ramkrishnan Thevar
-description: Tech Enthusiast|Software Developer|Freelancer.
+description: Tech Enthusiast,Software Developer,Freelancer.
 
 lang: en-US
 
@@ -8,7 +8,7 @@ lang: en-US
  #  - index.html
  #  - talks.md
  #  - press.md
- #  - about.md
+  - about.md
  #  - contact.md
 
 # Pages to include in footer navigation
@@ -42,12 +42,12 @@ contact_links:
   #   values:
    #    layout: post
     #   comments: true
-#   -
- #    scope:
-  #     path: ""
-   #    type: "pages"
-    # values:
-     #  layout: page
+  -
+    scope:
+      path: ""
+     type: "pages"
+    values:
+      layout: page
      #  comments: false
 
 # Plugins
