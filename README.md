@@ -8,10 +8,10 @@ rk ✌
 
 ### links
 
-[Linkedin](https://www.linkedin.com/in/1ramkrishnan)
-[Twitter](https://twitter.com/1rkthevar)
-[Facebook](https://www.facebook.com/ramkrishnan.thevar)
-[Whatsapp](https://wa.me/message/44OBR2ND4KVQI1)
+[Linkedin](https://www.linkedin.com/in/1ramkrishnan) | 
+[Twitter](https://twitter.com/1rkthevar) | 
+[Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
+[Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
 [Telegram](https://t.me/rkthevar1)
 
 
