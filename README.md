@@ -11,6 +11,9 @@ rk ✌
 [Linkedin](https://www.linkedin.com/in/1ramkrishnan)
 [Twitter](https://twitter.com/1rkthevar)
 [Facebook](https://www.facebook.com/ramkrishnan.thevar)
+[Facebook](https://www.facebook.com/ramkrishnan.thevar)
+[Whatsapp](https://wa.me/message/44OBR2ND4KVQI1)
+
 
 [CV Download](https://drive.google.com/file/d/1td_FHif6OGKUzDjGdGwRB69cxmgloEV1/view?usp=sharing)
 
