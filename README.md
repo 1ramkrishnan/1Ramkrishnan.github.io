@@ -17,5 +17,5 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 [CV Download](https://drive.google.com/file/d/1td_FHif6OGKUzDjGdGwRB69cxmgloEV1/view?usp=sharing)
 
-[Sponsor](https://ko-fi.com/rkthevar)
+[Sponsor](https://www.buymeacoffee.com/NqdBnvU)
 
