@@ -4,12 +4,12 @@ description: Tech Enthusiast,Software Developer,Freelancer.
 lang: en-US
 
 # Pages to include in header navigation
-# nav_pages:
+ nav_pages:
  #  - index.html
  #  - talks.md
  #  - press.md
   - about.md
- #  - contact.md
+   - contact.md
 
 # Pages to include in footer navigation
 footer_pages:
