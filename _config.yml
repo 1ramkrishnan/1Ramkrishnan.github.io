@@ -3,52 +3,15 @@ description: Tech Enthusiast,Software Developer,Freelancer.
 
 lang: en-US
 
-# Pages to include in header navigation
- nav_pages:
- #  - index.html
- #  - talks.md
- #  - press.md
-  - about.md
-   - contact.md
 
 # Pages to include in footer navigation
 footer_pages:
-#   - books.md
-#   - fine-print.md
+- README.md
 
 # Disqus login information, for comments
 disqus:
   shortname: 1Ramkrishnan
 
-# Links to include on the contact page
-contact_links:
-  - name: Twitter
-    url: https://twitter.com/1rkthevar
-    icon: twitter
-  - name: Facebook
-    url: https://facebook.com/ramkrishnan.thevar
-    icon: facebook
-  - name: Linkedin
-    url: https://www.linkedin.com/in/1ramkrishnan
-    icon: linkedin
-   
-
-# Front matter defaults
-# defaults:
-#   -
- #    scope:
- #      path: ""
- #      type: "posts"
-  #   values:
-   #    layout: post
-    #   comments: true
-  -
-    scope:
-      path: ""
-     type: "pages"
-    values:
-      layout: page
-     #  comments: false
 
 # Plugins
 plugins:
