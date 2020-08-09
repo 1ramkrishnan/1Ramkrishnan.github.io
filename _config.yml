@@ -1,21 +1,3 @@
-title: Ramkrishnan Thevar
-description: Tech Enthusiast,Software Developer,Freelancer.
-
-lang: en-US
-
-
-# Pages to include in footer navigation
-footer_pages:
-- README.md
-
-# Disqus login information, for comments
-disqus:
-  shortname: 1Ramkrishnan
-
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
-  - jekyll-avatar
-  - jekyll-github-metadata
-#   - jekyll-feed
+theme: minima
+minima:
+  skin: dark
