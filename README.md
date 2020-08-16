@@ -4,7 +4,18 @@
 ### About
 Ever since i got my first computer when i was a kid, software coding has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT i did my masters in computer application and did plenty of software course. After my grad i have worked for few finance Tech companies, i am into fintech industry for past 6+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to contribute in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
 
-✌
+- 🔭 I’m currently working on my project [Trading BOT for NSE](https://github.com/1ramkrishnan/https://github.com/1ramkrishnan/sumato_bot)
+- 🌱 I’m currently learning Docker & Microservices.
+- 👯 I’m looking for someone to collaborate on [NSE Trading BOT](https://github.com/1ramkrishnan/sumato_bot)
+- 💬 Ask me about anything [here](https://github.com/1ramkrishnan/1ramkrishnan/issues)
+
+**Languages and Tools:**  
+
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/C_Sharp_logo.svg"></code>
+<code><img height="30" src="https://image.shutterstock.com/image-photo/image-260nw-684826648.jpg"></code>
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"></code>
+<code><img height="30" src="https://ih1.redbubble.net/image.109336620.1604/st,small,845x845-pad,1000x1000,f8f8f8.jpg"></code>
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"></code>    
 
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 
@@ -17,6 +28,8 @@ Ever since i got my first computer when i was a kid, software coding has been my
 [Telegram](https://t.me/rkthevar1)
 
 
-[CV Download](https://drive.google.com/file/d/1td_FHif6OGKUzDjGdGwRB69cxmgloEV1/view?usp=sharing)
+[CV Download](https://drive.google.com/file/d/1vR9VcGdVY08qD39e-A6OTwSg6pB2YC9z/view?usp=sharing)
 
 [Sponsor](https://www.buymeacoffee.com/NqdBnvU)
+
+✌ peace out.
