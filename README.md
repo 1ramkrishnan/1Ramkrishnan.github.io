@@ -4,10 +4,14 @@
 ### About
 Ever since i got my first computer when i was a kid, software coding has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT i did my masters in computer application and did plenty of software course. After my grad i have worked for few finance Tech companies, i am into fintech industry for past 6+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to contribute in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
 
-🔭 I’m currently working on my project [Trading BOT for NSE](https://github.com/1ramkrishnan/https://github.com/1ramkrishnan/sumato_bot)
+🔭 I’m currently working on my project [Trading BOT for NSE](https://github.com/1ramkrishnan/https://github.com/1ramkrishnan/sumato_bot).
+
 🌱 I’m currently learning Docker & Microservices.
+
 👯 I’m looking for someone to collaborate on [NSE Trading BOT](https://github.com/1ramkrishnan/sumato_bot)
+
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
+
 
 **Languages and Tools:**  
 
