@@ -6,7 +6,7 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 ✌
 
-### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues,contribs,stars)
+### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 
 ### links
 
