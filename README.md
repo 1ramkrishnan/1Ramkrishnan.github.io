@@ -8,7 +8,7 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 🌱 I’m currently learning Docker & Microservices.
 
-👯 I’m looking for someone to collaborate on [NSE Algo Trading](https://github.com/1ramkrishnan/sumato_bot)
+👯 I’m looking for someone to collaborate on [Algo Trading NSE](https://github.com/1ramkrishnan/sumato_bot)
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
