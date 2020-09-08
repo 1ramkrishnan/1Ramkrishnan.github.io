@@ -34,4 +34,4 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 [Sponsor](https://www.buymeacoffee.com/NqdBnvU)
 
-✌ peace out.
+✌ "Simplicity is the soul of efficiency" -Austin
