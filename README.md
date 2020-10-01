@@ -33,6 +33,6 @@ Ever since i got my first computer when i was a kid, software coding has been my
 [CV Download](https://drive.google.com/file/d/1It7zjcZIWyuY0h001NrB5PTYf9AyJKX0/view?usp=sharing)
 -->
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J32168X)
-
 ✌ "What we know is a drop, what we don't know is an ocean" -Isaac
+
+[Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
