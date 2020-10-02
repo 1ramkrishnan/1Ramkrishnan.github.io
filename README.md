@@ -21,7 +21,7 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 
-### links
+### Social links
 
 [Linkedin](https://www.linkedin.com/in/1ramkrishnan) | 
 [Twitter](https://twitter.com/1rkthevar) | 
@@ -35,4 +35,4 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 ✌ "What we know is a drop, what we don't know is an ocean" -Isaac
 
-[Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
+#[Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
