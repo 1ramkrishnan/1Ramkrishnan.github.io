@@ -6,9 +6,8 @@ Ever since i got my first computer when i was a kid, software coding has been my
 
 🔭 I’m currently working on my project [Algo Trading NSE](https://github.com/1ramkrishnan/https://github.com/1ramkrishnan/sumato_bot).
 
-<!---
 🌱 I’m currently learning Docker & Microservices.
--->
+
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
 
