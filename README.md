@@ -33,7 +33,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [CV Download](https://drive.google.com/file/d/1It7zjcZIWyuY0h001NrB5PTYf9AyJKX0/view?usp=sharing)
 -->
 
-✌ “ Fix the cause, not the symptom. ” – Steve Maguire
+✌ "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success." -James Cameron
 
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
