@@ -37,3 +37,6 @@ Ever since i got my first computer when i was a kid, software programing has bee
 
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
+#### Happy Diwali 🪔
+
+
