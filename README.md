@@ -33,10 +33,10 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [CV Download](https://drive.google.com/file/d/1It7zjcZIWyuY0h001NrB5PTYf9AyJKX0/view?usp=sharing)
 -->
 
-✌️ "If you're not paying for the product, then you're the product." - The Social Dilemma @ Netflix.
-
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
-#### Happy Diwali 🪔
+
+#### "If you're not paying for the product, then you're the product." - The Social Dilemma @ Netflix.
+#### ✌️
 
 
