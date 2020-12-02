@@ -36,7 +36,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
 
-#### "If you're not paying for the product, then you're the product." - The Social Dilemma @ Netflix.
+#### "I don't believe in taking right decisions, I take decisions and make them right." - Ratan Tata.
 #### ✌️
 
 
