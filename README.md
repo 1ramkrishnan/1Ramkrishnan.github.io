@@ -36,7 +36,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
 
-#### "I don't believe in taking right decisions, I take decisions and make them right." - Ratan Tata.
+#### “Technology should improve your life… not become your life.” Billy Cox
 #### ✌️
 
 
