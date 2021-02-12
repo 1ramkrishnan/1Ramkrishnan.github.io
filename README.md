@@ -4,7 +4,7 @@
 ### About
 Ever since i got my first computer when i was a kid, software programing has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT i did my masters in computer application and did plenty of software course. After my grad i have worked for few finance Tech companies, i am into fintech industry for past 6+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to contribute in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
 
-🔭 I’m currently working on Whatsapp Chatbot.
+🔭 I’m currently tinkering with Raspberry pi and pihat sensors.
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
@@ -34,7 +34,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
 
-#### “Technology should improve your life… not become your life.” Billy Cox
+#### “Everything we hear is an opinion, not a fact. Everthing we see is a perspective, not the truth.” - Marcus Aurelius
 #### ✌️
 
 
