@@ -1,0 +1,10 @@
+connectivitycheck.gstatic.com
+www.gstatic.com
+wzrkt.com
+eu1-spiky.wzrkt.com
+bifrost-api.hotstar.com
+app-measurement.com
+www.google.com
+analytics-events.inshorts.com
+ssl.google-analytics.com
+privatestats.whatsapp.net
