@@ -34,7 +34,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
 
-#### “Everything we hear is an opinion, not a fact. Everthing we see is a perspective, not the truth.” - Marcus Aurelius
+#### “If you don't go after what you want, you'll never have it. If you don't ask, the answer is always no. If you don't step forward, you're always in the same place.” - Nora Roberts
 #### ✌️
 
 
