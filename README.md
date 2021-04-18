@@ -11,7 +11,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 
 **Languages and Tools:**  
 
-<code><img height="30" src="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#/media/File:C_Sharp_wordmark.svg"></code>
+<code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/800px-C_Sharp_wordmark.svg.png"></code>
 <code><img height="30" src="https://image.shutterstock.com/image-photo/image-260nw-684826648.jpg"></code>
 <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"></code>
 <code><img height="30" src="https://ih1.redbubble.net/image.109336620.1604/st,small,845x845-pad,1000x1000,f8f8f8.jpg"></code>
