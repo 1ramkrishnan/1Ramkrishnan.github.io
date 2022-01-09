@@ -25,7 +25,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
 [Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
-[Telegram](https://t.me/rkthevar1)
+[Telegram](https://t.me/rkthevar1) | 
 [root-access(Discord)](https://discord.gg/nPFbdrP3)
 
 [CV Download](https://drive.google.com/file/d/1bogqvF7dzIQpJAOH_pMbTw933Otyx7kg/view?usp=sharing)
