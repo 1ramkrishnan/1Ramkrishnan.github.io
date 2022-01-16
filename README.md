@@ -28,6 +28,8 @@ Ever since i got my first computer when i was a kid, software programing has bee
 [Telegram](https://t.me/rkthevar1) | 
 [root-access(Discord)](https://discord.gg/nPFbdrP3)
 
+[Digital Ocean Affiliated link](https://m.do.co/c/ae0ed06d6ce2)
+
 [CV Download](https://drive.google.com/file/d/1bogqvF7dzIQpJAOH_pMbTw933Otyx7kg/view?usp=sharing)
 
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
