@@ -1,4 +1,4 @@
-<h1><div> Ramkrishnan Thevar (rk) </h1></div>
+### Ramkrishnan Thevar (rk) 
  Tech Enthusiast | Software Developer | Freelancer.
 
 ### About
