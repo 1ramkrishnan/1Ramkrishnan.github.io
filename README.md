@@ -18,7 +18,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"></code>    
 
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
---
+---
 ### Links
 
 [Linkedin](https://www.linkedin.com/in/1ramkrishnan) | 
