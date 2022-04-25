@@ -30,7 +30,7 @@ Ever since i got my first computer when i was a kid, software programing has bee
 
 [Digital Ocean Affiliated link](https://m.do.co/c/ae0ed06d6ce2)
 
-[CV Download](https://drive.google.com/file/d/1gx1TSrOQxXS2wHAYcg827J_pqVKLdwaB/view?usp=sharing)
+[CV Download](https://drive.google.com/file/d/15XgAunHwoNm30teGkyvZwfqf9wJBXuD0/view?usp=sharing)
 
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
