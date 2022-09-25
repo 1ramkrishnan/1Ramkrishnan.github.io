@@ -2,7 +2,7 @@
  Tech Enthusiast | Software Developer | Freelancer.
 
 ### About
-Ever since i got my first computer when i was a kid, software programing has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT. After my Grad i have worked for few Fin-Tech companies, i am into fintech industry for past 7+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to work in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
+Ever since i got my first computer when i was a kid, software programing has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT-Applications. After my Grad i have worked for few Fin-Tech companies, i am into fintech industry for past 7+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to work in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
 
 🔭 I’m currently tinkering with Raspberry pi and pihat sensors.
 
