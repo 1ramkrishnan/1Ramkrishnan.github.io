@@ -2,9 +2,8 @@
  Tech Enthusiast | Software Developer | Freelancer.
 
 ### About
-Ever since i got my first computer when i was a kid, software programing has been my passion. I still remember sitting in front of my computer making it print "hello World" in different programing language. My passion carried me to pursue a career in IT-Applications. After my Grad i have worked for few Fin-Tech companies, i am into fintech industry for past 7+ years now, learnt lot of things. Apart from my full time corporate jobs i also do few freelance projects in my weekends,if you want me to work in your project/business do contact me. There certainly yet more to learn and explore new tech in coming days.
 
-🔭 I’m currently tinkering with Raspberry pi and pihat sensors.
+Technology focused with 7+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management.Also a part-time freelancer , if you want to me to work on your project/business do contact me.
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
@@ -30,9 +29,9 @@ Ever since i got my first computer when i was a kid, software programing has bee
 
 [Digital Ocean Affiliated link](https://m.do.co/c/ae0ed06d6ce2)
 
-[CV Download](https://drive.google.com/file/d/12w1osvd-fb0uepgmTN414NOTrXZlGwxQ/view)
-
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
+
+[CV Download](https://drive.google.com/file/d/12w1osvd-fb0uepgmTN414NOTrXZlGwxQ/view)
 
 
 #### “If you’re not paying for the product, then you are the product.”
