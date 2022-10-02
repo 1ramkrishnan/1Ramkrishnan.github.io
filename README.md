@@ -25,14 +25,13 @@ Technology focused with 7+ years of experience in capital market, software devel
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
 [Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
-[Telegram](https://t.me/rkthevar1) | 
-[root-access(Discord)](https://discord.gg/nPFbdrP3)
+[Telegram](https://t.me/rkthevar1)
 
-[Digital Ocean Affiliated link](https://m.do.co/c/ae0ed06d6ce2)
-
-[Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
+[Project payment link](https://rzp.io/l/rkSoftwares)
 
 [Curriculum vitae](https://drive.google.com/file/d/12w1osvd-fb0uepgmTN414NOTrXZlGwxQ/view)
+
+[Support me](https://www.buymeacoffee.com/NqdBnvU)
 
 
 #### “If you’re not paying for the product, then you are the product.”
