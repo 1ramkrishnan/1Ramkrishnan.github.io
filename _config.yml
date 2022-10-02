@@ -1,26 +1,3 @@
 theme: jekyll-theme-slate
 title: Ramkrishnan Thevar (rk)
 share-description: Tech Enthusiast | Software Developer | Freelancer.
-
-navbar-links:
-  Blog: "/"
-  Hire me: "https://attalitech.com/"
-  Projects: "projects"
-  About Me / Contact: "aboutme"
-  ❤ Support: "https://rzp.io/l/rkSoftwares"
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      carbonads: true
-      comments: true
-      social-share: true
-      show-share: true
-      show-subscribe: true
-      support_promo_box: true
-      after-content: [share-section.html, scroll-box.html]
-  -
