@@ -30,7 +30,7 @@ Technology focused with 7+ years of experience in capital market, software devel
 
 [Project payment & Sponsor link](https://rzp.io/l/rkSoftwares)
 
-[CV Download](https://drive.google.com/file/d/12w1osvd-fb0uepgmTN414NOTrXZlGwxQ/view)
+[Curriculum vitae](https://drive.google.com/file/d/12w1osvd-fb0uepgmTN414NOTrXZlGwxQ/view)
 
 
 #### “If you’re not paying for the product, then you are the product.”
