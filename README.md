@@ -1,6 +1,6 @@
 ### About
 
-#### Tech Enthusiast | Software Developer | Freelancer.
+Tech Enthusiast | Software Developer | Freelancer.
 
 Technology focused with 7+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management. Also a part-time freelancer , if you want to me to work on your project/business do contact me.
 
