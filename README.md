@@ -17,6 +17,9 @@ Technology focused with 7+ years of experience in capital market, software devel
 ---
 ### Projects
 
+---
+---
+
 [Ad Blocking Device](https://github.com/1ramkrishnan/1Ramkrishnan.github.io/blob/master/adblocking.md)
 
 ---
