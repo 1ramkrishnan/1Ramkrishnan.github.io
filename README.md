@@ -1,5 +1,4 @@
 ### About
-share-description: "adafa"
 Technology focused with 7+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management. Also a part-time freelancer , if you want to me to work on your project/business do contact me.
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
