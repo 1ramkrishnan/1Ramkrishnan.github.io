@@ -29,7 +29,7 @@ Technology focused with 7+ years of experience in capital market, software devel
 
 [Project payment link](https://rzp.io/l/rkSoftwares)
 
-[Curriculum vitae](https://drive.google.com/file/d/1-JX93i0YwDOAzeE7soNkYa1a-ykvlp7V/view?usp=share_link)
+[Curriculum vitae](https://drive.google.com/open?id=1-SzEVksYNCUPlYkPoGmUTyPUaTem36JR&authuser=rktheaver%40gmail.com&usp=drive_fs)
 
 [Support me](https://www.buymeacoffee.com/NqdBnvU)
 
