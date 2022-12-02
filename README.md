@@ -11,7 +11,6 @@ Technology focused with 7+ years of experience in capital market, software devel
 <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png"></code>
 <code><img height="30" src="https://ih1.redbubble.net/image.109336620.1604/st,small,845x845-pad,1000x1000,f8f8f8.jpg"></code>
 <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"></code>    
-<code><img height="30" src="https://commons.wikimedia.org/wiki/File:AWS_Simple_Icons_AWS_Cloud.svg/768px-Aws-logo-notext.svg.png"></code> 
 
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 ---
