@@ -1,3 +1,4 @@
-theme: minima
+theme: minima:
+ skin: dark
 title: Ramkrishnan Thevar (rk)
 share-description: Tech Enthusiast | Software Developer | Freelancer.
