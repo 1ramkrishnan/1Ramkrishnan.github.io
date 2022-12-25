@@ -31,9 +31,6 @@ Technology focused with 7+ years of experience in capital market, software devel
 
 [Curriculum vitae](https://drive.google.com/open?id=1-SzEVksYNCUPlYkPoGmUTyPUaTem36JR&authuser=rktheaver%40gmail.com&usp=drive_fs)
 
-[Support me](https://www.buymeacoffee.com/NqdBnvU)
-
-
 #### “If you’re not paying for the product, then you are the product.”
 #### ✌️
 
