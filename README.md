@@ -37,4 +37,5 @@ Technology focused with 7+ years of experience in capital market, software devel
 #### “If you’re not paying for the product, then you are the product.”
 #### ✌️
 
-
+<br>
+<a href='https://ko-fi.com/rkthevar' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br>
