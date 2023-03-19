@@ -7,7 +7,7 @@ Technology focused with 8+ years of experience in capital market, software devel
 
 **Certification:**  
 
-[<code><img height="60"  src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/mean.png"></code>](https://drive.google.com/file/d/1k2Nsd3hAtYW9iFi-jS9lfTV33lLwwaj6/view?usp=share_link)
+[<code><img height="60" width="60" src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/mean.png"></code>](https://drive.google.com/file/d/1-ArkycQZgtb7_4Jw-Vuw6bB8QLHb6Or2/view?usp=share_link)
 [<code><img height="60" width="60" src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/aspnet.jpg"></code>](https://drive.google.com/file/d/1-X6IL5UW_Asf6ra6_lbA0K0_W29xNbjS/view?usp=share_link)
 [<code><img height="60" width="60" src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150%2C150&is-pending-load=1#038;ssl=1"></code>](https://drive.google.com/file/d/1-EHClNZ8j6YAiBGMnvyKDqPVTUydGBlQ/view?usp=share_link)
 [<code><img height="60" width="60" src="https://raw.githubusercontent.com/1ramkrishnan/1Ramkrishnan.github.io/master/images/lsswb150.png"></code>](https://drive.google.com/file/d/1pW2_VcX14IB5j_13cmO8lE0toykxCAGS/view?usp=share_link)
