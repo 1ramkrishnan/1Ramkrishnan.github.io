@@ -16,7 +16,7 @@ Technology focused with 8+ years of experience in capital market, software devel
 <code><img height="60" src="https://images.credly.com/size/680x680/images/81f903ed-c3a1-4f4b-afcd-e03331a5b12c/image.png"></code>
 <code><img height="60" src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png"></code>
 <code><img height="60" src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150%2C150&is-pending-load=1#038;ssl=1"></code>
-<code><img height="60" src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150%2C150&is-pending-load=1#038;ssl=1"></code>
+<code><img height="60" src="https://www.msicertified.com/wp-content/uploads/2021/09/lsswb150_orig.jpg?resize=150,150&is-pending-load=1#038;ssl=1"></code>
 
 
 
