@@ -12,6 +12,12 @@ Technology focused with 8+ years of experience in capital market, software devel
 <code><img height="30" src="https://ih1.redbubble.net/image.109336620.1604/st,small,845x845-pad,1000x1000,f8f8f8.jpg"></code>
 <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"></code>    
 
+**Certification:**  
+<code><img height="30" src="https://images.credly.com/size/680x680/images/81f903ed-c3a1-4f4b-afcd-e03331a5b12c/image.png"></code>
+<code><img height="30" src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png"></code>
+<code><img height="30" src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150%2C150&is-pending-load=1#038;ssl=1"></code>
+
+
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 ---
 ### Projects
