@@ -32,7 +32,7 @@ Technology focused with 8+ years of experience in capital market, software devel
 
 [Project payment link](https://rzp.io/l/rkSoftwares)
 
-[Curriculum vitae](https://drive.google.com/open?id=1-SzEVksYNCUPlYkPoGmUTyPUaTem36JR&authuser=rktheaver%40gmail.com&usp=drive_fs)
+[Curriculum vitae](https://drive.google.com/file/d/10M0RabL1QvA1CtbITbOJNpdDjPFiqrzK/view?usp=share_link)
 
 #### “If you’re not paying for the product, then you are the product.”
 #### ✌️
