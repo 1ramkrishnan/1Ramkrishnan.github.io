@@ -14,7 +14,7 @@ Technology focused with 8+ years of experience in capital market, software devel
 
 **Certification:**  
 [<code><img height="60" src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150%2C150&is-pending-load=1#038;ssl=1"></code>](https://drive.google.com/file/d/1-EHClNZ8j6YAiBGMnvyKDqPVTUydGBlQ/view?usp=share_link)
-[<code><img height="60" src="https://www.msicertified.com/wp-content/uploads/2021/09/lsswb150_orig.jpg?resize=150,150&is-pending-load=1#038;ssl=1"></code>](https://drive.google.com/file/d/1pW2_VcX14IB5j_13cmO8lE0toykxCAGS/view?usp=share_link)
+[<code><img height="60" src="https://www.msicertified.com/wp-content/uploads/2021/09/lsswb150_orig.png?resize=150,150&is-pending-load=1#038;ssl=1"></code>](https://drive.google.com/file/d/1pW2_VcX14IB5j_13cmO8lE0toykxCAGS/view?usp=share_link)
 [<code><img height="60" src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png"></code>](https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url)
 [<code><img height="60" src="https://images.credly.com/size/680x680/images/81f903ed-c3a1-4f4b-afcd-e03331a5b12c/image.png"></code>](https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url)
 
