@@ -17,7 +17,7 @@ Technology focused with 9+ years of experience in capital market, software devel
 ---
 ### Projects
 
-[Ad Blocking Device (beta)](https://drive.google.com/file/d/1hzPme9etnov0jcxAnnKuB_onHtjhNtI3/view?usp=sharing)
+[Ad Blocking Device (beta)](/piholeplus.md)
 
 ---
 ### Links
