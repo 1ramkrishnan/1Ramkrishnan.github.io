@@ -17,7 +17,7 @@ Technology focused with 9+ years of experience in capital market, software devel
 ---
 ### Projects
 
-[Ad Blocking Device (beta)](https://raw.githubusercontent.com/1ramkrishnan/1Ramkrishnan.github.io/master/images/PiHole+.png) [ORDER NOW](https://forms.gle/DBaDm92ywzHxWtoNA)
+[Ad Blocking Device (beta).](https://forms.gle/DBaDm92ywzHxWtoNA)
 
 ---
 ### Links
