@@ -1,5 +1,5 @@
 ### About
-Technology focused with 8+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management. Also a part-time freelancer , if you want me to work on your project/business do contact me.
+Technology focused with 9+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management. Also a part-time freelancer , if you want me to work on your project/business do contact me.
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
