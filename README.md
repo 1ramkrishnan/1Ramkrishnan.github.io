@@ -22,7 +22,6 @@ Technology focused with 9+ years of experience in capital market, software devel
 ---
 ### Links
 
-**Social Links:**
 [Linkedin](https://www.linkedin.com/in/1ramkrishnan) | 
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
