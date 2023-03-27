@@ -33,5 +33,5 @@ Technology focused with 9+ years of experience in capital market, software devel
 
 [Curriculum vitae](https://drive.google.com/file/d/10M0RabL1QvA1CtbITbOJNpdDjPFiqrzK/view?usp=share_link)
 
-#### “If you’re not paying for the product, then you are the product.”
+#### "Life is a long lesson in humility" -James M. Barrie
 #### ✌️
