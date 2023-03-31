@@ -20,8 +20,8 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ---
 ### Projects
 
-<details>
-  <summary>HOMELAB -Home Automation</summary>
+
+  **1. HOMELAB -Home Automation**
   
 <br />When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:
 
@@ -41,7 +41,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 
 <br />That's it for today! I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your reference.
 
-</details>
+
 
 
 
