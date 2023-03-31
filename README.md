@@ -43,9 +43,7 @@ That's it for today! I hope you enjoyed reading about my homelab project and got
 
 </details>
 
-**1) HOMELAB -Home Automation**  
 
-W
 
 ---
 ### Links
