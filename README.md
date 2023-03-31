@@ -34,7 +34,7 @@ I turned my Raspberry Pi zero 2 W into a powerful network hub that does everythi
 
 - Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight [Zerotier](https://www.zerotier.com) network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.
 
-- Maintenance: I scheduled some cron jobs to remove unwanted files and watched movies from my Raspberry Pi to free up some space. I also set up a daily reboot of my router and DNS server to ensure optimal performance.
+- Maintenance: I have scheduled few cron jobs to remove unwanted files and watched movies from my Raspberry Pi to free up some space. I also set up a daily reboot of my router and DNS server to ensure optimal performance.
 
 - Reporting: To keep track of everything that's going on in my homelab project, I use [ntfy](https://ntfy.sh) mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.
 
