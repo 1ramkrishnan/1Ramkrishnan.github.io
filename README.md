@@ -24,21 +24,21 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 
 I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:
 
-- DNS: I used Pi-hole as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.
+- DNS: I used [Pi-hole](https://pi-hole.net) as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.
 
-- Network monitoring: I wrote a shell script that monitors my network continuously for speed, latency and potential intrusions. It also checks for network traces using psad tool, which detects and alerts me of any port scans or attacks on my network. The script runs every 15 minutes and sends me a notification on my phone using ntfy app if there is any issue or anomaly.
+- Network monitoring: I wrote a shell script that monitors my network continuously for speed, latency and potential intrusions. It also checks for network traces using [PSAD](https://github.com/mrash/psad) tool, which detects and alerts me of any port scans or attacks on my network. The script runs every 15 minutes and sends me a notification on my phone using ntfy app if there is any issue or anomaly.
 
-- Torrent: I configured Transmission RPC, which downloads HD quality movies from various torrent sites automatically using torrent RSS feeds. This saves me time and bandwidth from manually searching and downloading movies online. Transmission RPC is a lightweight and user-friendly torrent client that runs as a daemon on my Raspberry Pi and can be controlled remotely via web or mobile app.
+- Torrent: I configured [Transmission RPC](https://transmissionbt.com), which downloads HD quality movies from various torrent sites automatically using torrent RSS feeds. This saves me time and bandwidth from manually searching and downloading movies online. Transmission RPC is a lightweight and user-friendly torrent client that runs as a daemon on my Raspberry Pi and can be controlled remotely via web or mobile app.
 
-- Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. MiniDLNA is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.
+- Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. [MiniDLNA](https://help.ubuntu.com/community/MiniDLNA) is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.
 
-- Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight Zerotier network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.
+- Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight [Zerotier](https://www.zerotier.com) network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.
 
 - Maintenance: I scheduled some cron jobs to remove unwanted files and watched movies from my Raspberry Pi to free up some space. I also set up a daily reboot of my router and DNS server to ensure optimal performance.
 
-- Reporting: To keep track of everything that's going on in my homelab project, I use ntfy mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.
+- Reporting: To keep track of everything that's going on in my homelab project, I use [ntfy](https://ntfy.sh) mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.
 
-That's it for today! I hope you enjoyed reading about my homelab project and got some inspiration for your own. If you have any questions or feedback, feel free to leave a comment below or contact me via email. Thanks for reading and stay tuned for more posts!
+That's it for today! I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your reference.
 
 ---
 ### Links
