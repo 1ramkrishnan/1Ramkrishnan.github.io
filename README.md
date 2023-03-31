@@ -20,7 +20,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ---
 ### Projects
 
-[Ad Blocking Device (beta).](https://forms.gle/DBaDm92ywzHxWtoNA)
+[Ad Blocking Device (beta).](https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/PiHole%2B.png)
 
 ---
 ### Links
@@ -32,7 +32,6 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 [Telegram](https://t.me/rkthevar1)
 
 
-[Project payment link](https://rzp.io/l/rkSoftwares)
 
 [Curriculum vitae](https://drive.google.com/file/d/10M0RabL1QvA1CtbITbOJNpdDjPFiqrzK/view?usp=share_link)
 
