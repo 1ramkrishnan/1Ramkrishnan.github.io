@@ -1,5 +1,8 @@
 ### About
-Technology focused with 9+ years of experience in capital market, software development and project management. Deep expertise in Application lifecycle management. Also a part-time freelancer , if you want me to work on your project/business do contact me.
+
+I am a fintech industry professional with over 9 years of experience in capital markets, software development, and project management. I have deep expertise in application lifecycle management and am passionate about delivering high-quality software solutions that meet business needs.
+
+In my free time, I enjoy exploring new technologies and learning about emerging trends in the fintech industry. I am also an avid podcast listener and enjoy staying up-to-date with the latest news and research in my field.
 
 💬 Ask me about anything [here](https://wa.me/message/44OBR2ND4KVQI1)
 
