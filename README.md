@@ -20,13 +20,11 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ---
 ### Projects
 <details>
-  <summary>Home Automation</summary>
+  <summary>HOMELAB - Home Automation</summary>
 
- ### HOMELAB - Home Automation.
-  
-When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:
+When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:<p />
 
-<p />
+
 
 * DNS: I used [Pi-hole](https://pi-hole.net) as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.<p />
 
@@ -34,7 +32,7 @@ When it comes to home automation there are tons of open source software availabl
 
 * Torrent: I configured [Transmission RPC](https://transmissionbt.com), which downloads HD quality movies from various torrent sites automatically using torrent RSS feeds. This saves me time and bandwidth from manually searching and downloading movies online. Transmission RPC is a lightweight and user-friendly torrent client that runs as a daemon on my Raspberry Pi and can be controlled remotely via web or mobile app.<p />
 
-* Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. [MiniDLNA](https://help.ubuntu.com/community/MiniDLNA) is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.<br />
+* Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. [MiniDLNA](https://help.ubuntu.com/community/MiniDLNA) is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.<p />
 
 * Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight [Zerotier](https://www.zerotier.com) network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.<p />
 
