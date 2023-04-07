@@ -36,7 +36,7 @@ When it comes to home automation there are tons of open source software availabl
 
 * Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. <a href="https://help.ubuntu.com/community/MiniDLNA">MiniDLNA<a /> is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.<p />
 
-* Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight <a href="https://www.zerotier.com">Zerotier]<a /> network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.<p />
+* Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight <a href="https://www.zerotier.com">Zerotier<a /> network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.<p />
 
 * Maintenance: I have scheduled few cron jobs to remove unwanted files and watched movies from my Raspberry Pi to free up some space. I also set up a daily reboot of my router and DNS server to ensure optimal performance.<p />
 
