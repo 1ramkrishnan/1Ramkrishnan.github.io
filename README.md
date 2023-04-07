@@ -40,7 +40,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 
 * Reporting: To keep track of everything that's going on in my homelab project, I use [ntfy](https://ntfy.sh) mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.
 
-<br />That's it for today! I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your reference.
+<br />I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your reference.
 
 </details>
 
