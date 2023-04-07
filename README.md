@@ -20,13 +20,13 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ---
 ### Projects
 <details>
-  <summary>HOMELAB -Home Automation</summary>
+  <summary>Home Automation</summary>
 
- 
+ ### HOMELAB - Home Automation.
   
-<br />When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:
+<p />When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my Raspberry Pi zero 2 W into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:
 
-<br />
+<p />
 
 * DNS: I used [Pi-hole](https://pi-hole.net) as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.<p />
 
