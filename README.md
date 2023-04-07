@@ -24,7 +24,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 <p />
   
   
-When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspberry Pi Zero 2 W<a /> into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:<p />
+When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspberry Pi Zero 2 W</a> into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:<p />
 
 
 
