@@ -28,7 +28,7 @@ When it comes to home automation there are tons of open source software availabl
 
 
 
-* DNS: I used [Pi-hole](https://pi-hole.net) as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.<p />
+* DNS: I used <a href="https://pi-hole.net"> Pi-hole<a> as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.<p />
 
 * Network monitoring: I wrote a shell script that monitors my network continuously for speed, latency and potential intrusions. It also checks for network traces using [PSAD](https://github.com/mrash/psad) tool, which detects and alerts me of any port scans or attacks on my network. The script runs every 15 minutes and sends me a notification on my phone using ntfy app if there is any issue or anomaly.<p />
 
