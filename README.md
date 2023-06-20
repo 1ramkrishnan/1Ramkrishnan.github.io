@@ -42,7 +42,7 @@ When it comes to home automation there are tons of open source software availabl
 
 * Reporting: To keep track of everything that's going on in my homelab project, I use <a href="https://ntfy.sh">ntfy</a> mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.<p />
 
-<br />I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your reference.<p />
+<br />I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your use.<p />
 
 </details>
 
