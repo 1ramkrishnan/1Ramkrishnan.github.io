@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple File Upload</title>
+</head>
+<body>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="files[]" id="fileUpload" multiple>
+    <input type="submit" value="Upload">
+  </form>
+
+  <ul id="fileList"></ul>
+
+  <script>
+    const fileUpload = document.getElementById("fileUpload");
+    const fileList = document.getElementById("fileList");
+
+    fileUpload.addEventListener("change", function(event) {
+      fileList.innerHTML = "";
+
+      for (let i = 0; i < event.target.files.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = event.target.files[i].name;
+        fileList.appendChild(li);
+      }
+    });
+  </script>
+</body>
+</html>
+
