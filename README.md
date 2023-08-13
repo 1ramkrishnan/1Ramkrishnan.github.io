@@ -19,35 +19,9 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 ---
 ### Projects
-<details>
-  <summary>HOMELAB - Home Automation</summary>
+
+  [HOMELAB - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
 <p />
-  
-  
-When it comes to home automation there are tons of open source software available but i wanted something for my own needs. So, I turned my <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspberry Pi Zero 2 W</a> into a powerful network hub that does everything from blocking ads to streaming movies. Here are the main features of my setup:<p />
-
-
-
-* DNS: I used <a href="https://pi-hole.net"> Pi-hole</a> as a DNS server that blocks ads, malicious links and trackers at the network level. This way, I can enjoy a faster and cleaner browsing and ad-free experience on all my devices, including my smart TV and mobile apps. Pi-hole is easy to install and configure, and it also provides a nice web interface where I can see the statistics and logs of all the queries and blocked domains.<p />
-
-* Network monitoring: I wrote a shell script that monitors my network continuously for speed, latency and potential intrusions. It also checks for network traces using <a href="https://github.com/mrash/psad">PSAD</a> tool, which detects and alerts me of any port scans or attacks on my network. The script runs every 15 minutes and sends me a notification on my phone using ntfy app if there is any issue or anomaly.<p />
-
-* Torrent: I configured <a href="https://transmissionbt.com">Transmission RPC</a>, which downloads HD quality movies from various torrent sites automatically using torrent RSS feeds. This saves me time and bandwidth from manually searching and downloading movies online. Transmission RPC is a lightweight and user-friendly torrent client that runs as a daemon on my Raspberry Pi and can be controlled remotely via web or mobile app.<p />
-
-* Streaming: To watch all these movies seamlessly on any device within my network, I also configured MiniDLNA, which allows me to stream movies from my Raspberry Pi to my TV, laptop or phone. <a href="https://help.ubuntu.com/community/MiniDLNA">MiniDLNA</a> is a simple and fast media server that supports DLNA/UPnP protocols and can handle various formats of video, audio and image files.<p />
-
-* Network Access: To access my network from outside, i was initially thinking of configuring the openvpn but unfortunately my raspberry already exhausted with all other task. So i configure lightweight <a href="https://www.zerotier.com">Zerotier</a> network tunnel which gives me access to my network from anywhere. Zerotier is a secure and easy-to-use virtual network that creates encrypted peer-to-peer connections between devices.<p />
-
-* Maintenance: I have scheduled few cron jobs to remove unwanted files and watched movies from my Raspberry Pi to free up some space. I also set up a daily reboot of my router and DNS server to ensure optimal performance.<p />
-
-* Reporting: To keep track of everything that's going on in my homelab project, I use <a href="https://ntfy.sh">ntfy</a> mobile app that reports to me hourly on various metrics such as weather, network speed, latency, internet outage and system status.<p />
-
-<br />I hope you enjoyed reading about my homelab project and got some inspiration for your own. Iam compiling this project with scripts and config in my private repository once it is ready i will make it public for your use.<p />
-
-</details>
-
-
-
 ---
 ### Links
 
