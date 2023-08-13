@@ -21,7 +21,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 ### Projects
 
   [HOMELAB - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
-<p />
+
 ---
 ### Links
 
