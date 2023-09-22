@@ -18,7 +18,7 @@ In my free time, I enjoy exploring new technologies and learning about emerging 
 [<code><img height="60" width="60" src="https://images.credly.com/size/680x680/images/81f903ed-c3a1-4f4b-afcd-e03331a5b12c/image.png"></code>](https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url)
 ### ![Github stats](https://github-readme-stats.vercel.app/api?username=1ramkrishnan&count_private=true&hide=prs,issues)
 ---
-### Projects
+### Recent Projects
 
   [HOMELAB - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
 
