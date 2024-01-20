@@ -30,7 +30,7 @@ I am always curious about new technologies and emerging trends in the fintech in
 
 
 
-[Curriculum vitae](https://drive.google.com/file/d/10M0RabL1QvA1CtbITbOJNpdDjPFiqrzK/view?usp=share_link)
+[Curriculum vitae](https://drive.google.com/file/d/1Cj4cN2Y0nc1WxhnLGwJGcgPVQaNZ3Ry5/view?usp=sharing)
 
 #### “The only way to do great work is to love what you do.” - Steve Jobs
 #### ✌️
