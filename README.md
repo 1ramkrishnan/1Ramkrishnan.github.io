@@ -26,8 +26,8 @@ I am always curious about new technologies and emerging trends in the fintech in
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
 [Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
-[Telegram](https://t.me/rkthevar1)
-<a target="_blank" rel="noreferrer noopener" href="https://nextcloud.com/sharing#rk@http://cloud.rklab.co.in" style="padding:10px;background-color:#00679e;color:#ffffff;border-radius:3px;padding-left:4px;">
+[Telegram](https://t.me/rkthevar1) |
+<a target="_blank" rel="noreferrer noopener" href="http://cloud.rklab.co.in/s/sharing" style="padding:10px;background-color:#00679e;color:#ffffff;border-radius:3px;padding-left:4px;">
 	<span style="background-image:url(https://cloud.rklab.co.in/apps/theming/image/logo?useSvg=1&v=22);width:50px;height:30px;position:relative;top:8px;background-size:contain;display:inline-block;background-repeat:no-repeat; background-position: center center;"></span>
 	Share with me via Nextcloud
 </a>
