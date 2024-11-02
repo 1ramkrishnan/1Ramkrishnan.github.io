@@ -1,8 +1,6 @@
 ### About
 
-I have ten+ years of experience in fintech industry professional, working on capital markets, retail banking, software development, and project management. I excel at application lifecycle management and deliver high-quality software solutions that align with business objectives.
-
-I am always curious about new technologies and emerging trends in the fintech industry. I keep myself updated with the latest news and research in my field by listening to podcasts regularly. I also enjoy learning new skills and exploring new challenges.Besides my professional interests, I also like tinkering with raspberry pi or self hosting stuff. I find it fun and rewarding to create my own projects and experiment with different possibilities.
+With over 11 years in capital markets and banking technology, I am a Country Technology Manager at Standard Chartered Bank, focused on delivering secure, efficient digital solutions. Outside of work, I explore IoT, homelab projects, and open-source tech, always seeking ways to enhance processes. I’m dedicated to advancing my career through continuous innovation and expertise in digital transformation.
 
 
 **Certification:**  
@@ -34,7 +32,7 @@ I am always curious about new technologies and emerging trends in the fintech in
 
 
 
-[Curriculum vitae](https://drive.google.com/file/d/1D-I4chxoCAiHBRScbO_2Oju2lMhLGJDE/view)
+[Curriculum vitae](http://cloud.rklab.co.in/s/rkcv)
 
 #### “The only way to do great work is to love what you do.” - Steve Jobs
 #### ✌️
