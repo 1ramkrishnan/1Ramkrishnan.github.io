@@ -1,7 +1,8 @@
 ### About
 
-With over 11 years in capital markets and banking technology, I am a Country Technology Manager at Standard Chartered Bank, focused on delivering secure, efficient digital solutions. Outside of work, I explore IoT, homelab projects, and open-source tech, always seeking ways to enhance processes. I’m dedicated to advancing my career through continuous innovation and expertise in digital transformation.
+With over 11 years of experience in the fintech industry, I specialize in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.
 
+My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with Raspberry Pi and self-hosting projects, finding it rewarding to create and experiment with my own innovations.
 
 **Certification:**  
 
