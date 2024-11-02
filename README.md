@@ -26,7 +26,7 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
 [Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
 [Telegram](https://t.me/rkthevar1) |
-[Share with me via rkCloud](http://cloud.rklab.co.in/s/sharing) |
+[Share with me via rkCloud](http://cloud.rklab.co.in/s/sharing) 
 
 
 
