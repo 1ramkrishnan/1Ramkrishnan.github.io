@@ -28,8 +28,8 @@ I am always curious about new technologies and emerging trends in the fintech in
 [Whatsapp](https://wa.me/message/44OBR2ND4KVQI1) | 
 [Telegram](https://t.me/rkthevar1) |
 <a target="_blank" rel="noreferrer noopener" href="http://cloud.rklab.co.in/s/sharing" style="padding:10px;background-color:#00679e;color:#ffffff;border-radius:3px;padding-left:4px;">
-	<span style="background-image:url(https://cloud.rklab.co.in/apps/theming/image/logo?useSvg=1&v=22);width:50px;height:30px;position:relative;top:8px;background-size:contain;display:inline-block;background-repeat:no-repeat; background-position: center center;"></span>
-	Share with me via Nextcloud
+	<span style="background-image:url([https://cloud.rklab.co.in/apps/theming/image/logo?useSvg=1&v=22](https://cloud.rklab.co.in/core/preview?fileId=13046&x=2160&y=1440&a=true&etag=7d8dfb1bdfa783c00a58e164a16cb6de));width:50px;height:30px;position:relative;top:8px;background-size:contain;display:inline-block;background-repeat:no-repeat; background-position: center center;"></span>
+	Share with me via rkCloud
 </a>
 
 
