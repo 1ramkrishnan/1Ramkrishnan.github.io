@@ -31,7 +31,15 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 [Telegram](https://t.me/rkthevar1) |
 [Share with me via rkCloud](http://cloud.rklab.co.in/s/sharing) 
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBWJS9BN5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-BBWJS9BN5D');
+</script>
 
 
 [Curriculum vitae](http://cloud.rklab.co.in/s/rkcv)
