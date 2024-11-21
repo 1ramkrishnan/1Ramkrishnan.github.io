@@ -25,9 +25,9 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 ### Links
 
 [Linkedin](https://www.linkedin.com/in/1ramkrishnan) | 
+[Bluesky](https://bsky.app/profile/ramkrishnan.bsky.social) | 
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
-[Bluesky](https://bsky.app/profile/ramkrishnan.bsky.social) | 
 [ChessArena](https://chessarena.com/profile/750754) |
 [Share with me via rkCloud](http://cloud.rklab.co.in/s/sharing) 
 
