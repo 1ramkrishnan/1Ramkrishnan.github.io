@@ -29,6 +29,11 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 [Twitter](https://twitter.com/1rkthevar) | 
 [Facebook](https://www.facebook.com/ramkrishnan.thevar) | 
 [ChessArena](https://chessarena.com/profile/750754) |
+
+[![Twitter](https://upload.wikimedia.org/wikipedia/commons/6/60/Twitter_Logo_2012.png)](https://twitter.com/1rkthevar)
+[![LinkedIn](https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013.png)](https://www.linkedin.com/in/1ramkrishnan)
+
+
 [Share with me via rkCloud](http://cloud.rklab.co.in/s/sharing) 
 
 
