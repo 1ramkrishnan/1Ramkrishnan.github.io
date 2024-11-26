@@ -18,7 +18,7 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 
   [rkLaB - Homelab v2](https://rklab.co.in/)
 
-  [HOMELAB - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
+  [Homelab - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
 
 
 ---
