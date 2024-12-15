@@ -33,7 +33,7 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 
 [Résumé](http://cloud.rklab.co.in/s/rkresume)
 
-Listen to my Résumé in fun way😉
+Listen to my Résumé in fun way😉<br />
 ![Music](rkresume.mp3)
 
 #### “The only way to do great work is to love what you do.” - Steve Jobs
