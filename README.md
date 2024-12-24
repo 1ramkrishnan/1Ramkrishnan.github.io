@@ -20,6 +20,8 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 
   [Homelab - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
 
+  [SenSei AI Bot](https://n8n.rklab.co.in/webhook/1522115a-d719-4682-8aa5-886b6e9e6a9f/chat)
+
 
 ---
 ### Links
