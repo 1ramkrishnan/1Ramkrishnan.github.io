@@ -16,12 +16,11 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 ---
 ### Recent Projects
 
+  [SensAI](https://rklab.co.in/ai)
+  
   [rkLaB - Homelab v2](https://rklab.co.in/)
 
   [Homelab - Home Automation](https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
-
-  [SensAI](https://n8n.rklab.co.in/webhook/bf70e6bb-598b-4187-a5e0-cc9594f8f1ed/chat)
-
 
 ---
 ### Links
