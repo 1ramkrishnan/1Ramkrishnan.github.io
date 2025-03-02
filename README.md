@@ -1,6 +1,6 @@
 ### About
 
-With over 11 years of experience in the fintech industry, I specialize in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.
+With over 12+ years of experience in the fintech industry, I specialize in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.
 
 My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with Raspberry Pi and self-hosting projects, finding it rewarding to create and experiment with my own innovations.
 
