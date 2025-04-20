@@ -1,6 +1,3 @@
-title: [rk.]
-description: [Ramkrishnan Thevar.]
-
 ### About
 
 With over 12+ years of experience in the fintech industry, I specialize in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.
