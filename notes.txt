@@ -1,480 +1,158 @@
 using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading;
+using System.Net;
+using System.Net.Sockets;
 using Renci.SshNet;
 
-namespace SftpDownloadConsole
-{
 class Program
 {
-private static Dictionary<string, string> config = new Dictionary<string, string>();
-private static string configPath = “sftp_config.txt”;
-private static string logPath;
-private static bool runContinuously = false;
+static void Main(string[] args)
+{
+// Configuration
+string sftpHost = “your-sftp-server.com”;
+int sftpPort = 22;
+string username = “your-username”;
+string password = “your-password”;
 
 ```
-    static void Main(string[] args)
+    string proxyHost = "proxy-server.com";
+    int proxyPort = 1080; // Common SOCKS proxy port
+    
+    string remoteFilePath = "/remote/path/to/file.txt";
+    string localFilePath = @"C:\local\path\to\file.txt";
+    
+    try
     {
-        Console.WriteLine("SFTP Download and Extract Console Application");
-        Console.WriteLine("===========================================");
+        DownloadFileViaSftpProxy(sftpHost, sftpPort, username, password, 
+                               proxyHost, proxyPort, remoteFilePath, localFilePath);
+        Console.WriteLine("File downloaded successfully!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+    }
+    
+    Console.ReadKey();
+}
 
-        try
+static void DownloadFileViaSftpProxy(string sftpHost, int sftpPort, string username, string password,
+                                   string proxyHost, int proxyPort, string remoteFilePath, string localFilePath)
+{
+    // Create connection info with proxy
+    var connectionInfo = new ConnectionInfo(sftpHost, sftpPort, username,
+        ProxyTypes.Socks5, // or ProxyTypes.Socks4, ProxyTypes.Http
+        proxyHost, proxyPort,
+        new PasswordAuthenticationMethod(username, password));
+    
+    // Alternative: Create connection info without proxy authentication
+    // var connectionInfo = new ConnectionInfo(sftpHost, sftpPort, username,
+    //     ProxyTypes.Socks5, proxyHost, proxyPort, null, null,
+    //     new PasswordAuthenticationMethod(username, password));
+    
+    using (var sftpClient = new SftpClient(connectionInfo))
+    {
+        Console.WriteLine("Connecting to SFTP server via proxy...");
+        sftpClient.Connect();
+        
+        if (sftpClient.IsConnected)
         {
-            // Load configuration
-            LoadConfiguration();
+            Console.WriteLine("Connected successfully!");
             
-            // Check if we should run continuously
-            if (config.ContainsKey("RunMode") && config["RunMode"].ToLower() == "continuous")
+            // Check if remote file exists
+            if (sftpClient.Exists(remoteFilePath))
             {
-                runContinuously = true;
-                int intervalMinutes = int.Parse(config.GetValueOrDefault("IntervalMinutes", "60"));
-                Console.WriteLine($"Running in continuous mode. Interval: {intervalMinutes} minutes");
-                Console.WriteLine("Press 'q' to quit...");
+                Console.WriteLine($"Downloading file: {remoteFilePath}");
                 
-                RunContinuously(intervalMinutes);
+                // Ensure local directory exists
+                string localDir = Path.GetDirectoryName(localFilePath);
+                if (!Directory.Exists(localDir))
+                {
+                    Directory.CreateDirectory(localDir);
+                }
+                
+                // Download file with progress tracking
+                using (var fileStream = new FileStream(localFilePath, FileMode.Create))
+                {
+                    var fileInfo = sftpClient.Get(remoteFilePath);
+                    long totalBytes = fileInfo.Length;
+                    long downloadedBytes = 0;
+                    
+                    sftpClient.DownloadFile(remoteFilePath, fileStream, (bytes) =>
+                    {
+                        downloadedBytes = bytes;
+                        double progress = (double)downloadedBytes / totalBytes * 100;
+                        Console.Write($"\rProgress: {progress:F1}%");
+                    });
+                }
+                
+                Console.WriteLine($"\nFile downloaded to: {localFilePath}");
             }
             else
             {
-                // Run once
-                Console.WriteLine("Running once...");
-                DownloadAndExtractFiles();
-                Console.WriteLine("Process completed. Press any key to exit...");
-                Console.ReadKey();
+                throw new FileNotFoundException($"Remote file not found: {remoteFilePath}");
             }
-        }
-        catch (Exception ex)
-        {
-            WriteLog($"Fatal error: {ex.Message}");
-            Console.WriteLine($"Error: {ex.Message}");
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
-        }
-    }
-
-    private static void LoadConfiguration()
-    {
-        try
-        {
-            if (!File.Exists(configPath))
-            {
-                CreateDefaultConfig();
-                Console.WriteLine($"Default configuration created at: {configPath}");
-                Console.WriteLine("Please edit the configuration file and run again.");
-                Console.ReadKey();
-                Environment.Exit(0);
-            }
-
-            string[] lines = File.ReadAllLines(configPath);
-            foreach (string line in lines)
-            {
-                if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
-                    continue;
-
-                string[] parts = line.Split(new char[] { '=' }, 2);
-                if (parts.Length == 2)
-                {
-                    config[parts[0].Trim()] = parts[1].Trim();
-                }
-            }
-
-            logPath = config.GetValueOrDefault("LogPath", "sftp_log.txt");
-            
-            // Create directories
-            string downloadPath = config.GetValueOrDefault("LocalDownloadPath", "Downloads");
-            string extractPath = config.GetValueOrDefault("ExtractPath", "Extracted");
-            
-            Directory.CreateDirectory(downloadPath);
-            Directory.CreateDirectory(extractPath);
-            Directory.CreateDirectory(Path.GetDirectoryName(logPath) ?? ".");
-
-            WriteLog("Configuration loaded successfully.");
-        }
-        catch (Exception ex)
-        {
-            throw new Exception($"Error loading configuration: {ex.Message}");
-        }
-    }
-
-    private static void CreateDefaultConfig()
-    {
-        string defaultConfig = @"# SFTP Download Configuration
-```
-
-# Lines starting with # are comments
-
-# SFTP Server Settings
-
-SftpHost=your-sftp-server.com
-SftpUsername=your-username
-SftpPassword=your-password
-SftpRemotePath=/path/to/remote/files
-
-# Local Paths
-
-LocalDownloadPath=C:\Downloads\SftpFiles
-ExtractPath=C:\Extracted\SftpFiles
-LogPath=C:\Logs\sftp_download.log
-
-# File Settings
-
-FilePassword=your-file-password
-
-# Run Mode: ‘once’ or ‘continuous’
-
-RunMode=once
-
-# Interval in minutes (only used in continuous mode)
-
-IntervalMinutes=60
-
-# Download files containing today’s date (true/false)
-
-DownloadTodayFiles=true
-
-# Download all archive files (true/false)
-
-DownloadAllArchives=false
-
-# File extensions to download (comma-separated)
-
-ArchiveExtensions=.zip,.rar,.7z
-
-# Delete downloaded files after extraction (true/false)
-
-DeleteAfterExtraction=false
-“;
-
-```
-        File.WriteAllText(configPath, defaultConfig);
-    }
-
-    private static void RunContinuously(int intervalMinutes)
-    {
-        while (true)
-        {
-            try
-            {
-                DownloadAndExtractFiles();
-                
-                // Wait for the specified interval or until 'q' is pressed
-                DateTime nextRun = DateTime.Now.AddMinutes(intervalMinutes);
-                WriteLog($"Next run scheduled at: {nextRun:yyyy-MM-dd HH:mm:ss}");
-                
-                for (int i = 0; i < intervalMinutes * 60; i++)
-                {
-                    if (Console.KeyAvailable)
-                    {
-                        var key = Console.ReadKey(true);
-                        if (key.Key == ConsoleKey.Q)
-                        {
-                            Console.WriteLine("Exiting...");
-                            return;
-                        }
-                    }
-                    Thread.Sleep(1000);
-                }
-            }
-            catch (Exception ex)
-            {
-                WriteLog($"Error in continuous loop: {ex.Message}");
-                Thread.Sleep(60000); // Wait 1 minute before retry
-            }
-        }
-    }
-
-    private static void DownloadAndExtractFiles()
-    {
-        WriteLog("Starting download and extract process...");
-        Console.WriteLine("Starting download and extract process...");
-
-        try
-        {
-            string host = config["SftpHost"];
-            string username = config["SftpUsername"];
-            string password = config["SftpPassword"];
-            string remotePath = config["SftpRemotePath"];
-            string localPath = config["LocalDownloadPath"];
-            string extractPath = config["ExtractPath"];
-
-            using (var client = new SftpClient(host, username, password))
-            {
-                client.Connect();
-                WriteLog("Connected to SFTP server.");
-                Console.WriteLine("Connected to SFTP server.");
-
-                var files = client.ListDirectory(remotePath);
-                string today = DateTime.Now.ToString("yyyy-MM-dd");
-                
-                int downloadCount = 0;
-                int extractCount = 0;
-
-                foreach (var file in files)
-                {
-                    if (file.IsRegularFile && ShouldDownloadFile(file.Name, today))
-                    {
-                        string localFilePath = Path.Combine(localPath, file.Name);
-                        
-                        // Check if file already exists and has same size
-                        if (File.Exists(localFilePath) && new FileInfo(localFilePath).Length == file.Length)
-                        {
-                            WriteLog($"File {file.Name} already exists with same size. Skipping download.");
-                            continue;
-                        }
-
-                        WriteLog($"Downloading file: {file.Name}");
-                        Console.WriteLine($"Downloading: {file.Name}");
-                        
-                        using (var fileStream = File.Create(localFilePath))
-                        {
-                            client.DownloadFile(file.FullName, fileStream);
-                        }
-                        
-                        downloadCount++;
-                        WriteLog($"Downloaded: {file.Name} ({FormatFileSize(file.Length)})");
-                        
-                        // Extract if it's an archive file
-                        if (IsArchiveFile(file.Name))
-                        {
-                            if (ExtractPasswordProtectedFile(localFilePath, file.Name, extractPath))
-                            {
-                                extractCount++;
-                                
-                                // Delete original file if configured to do so
-                                if (bool.Parse(config.GetValueOrDefault("DeleteAfterExtraction", "false")))
-                                {
-                                    File.Delete(localFilePath);
-                                    WriteLog($"Deleted original file: {file.Name}");
-                                }
-                            }
-                        }
-                    }
-                }
-                
-                client.Disconnect();
-                WriteLog($"Process completed. Downloaded: {downloadCount} files, Extracted: {extractCount} files");
-                Console.WriteLine($"Process completed. Downloaded: {downloadCount} files, Extracted: {extractCount} files");
-            }
-        }
-        catch (Exception ex)
-        {
-            WriteLog($"Error during download/extract: {ex.Message}");
-            Console.WriteLine($"Error: {ex.Message}");
-        }
-    }
-
-    private static bool ShouldDownloadFile(string fileName, string today)
-    {
-        bool downloadTodayFiles = bool.Parse(config.GetValueOrDefault("DownloadTodayFiles", "true"));
-        bool downloadAllArchives = bool.Parse(config.GetValueOrDefault("DownloadAllArchives", "false"));
-        
-        // Download files that contain today's date
-        if (downloadTodayFiles && fileName.Contains(today))
-            return true;
-        
-        // Download all archive files if configured
-        if (downloadAllArchives && IsArchiveFile(fileName))
-            return true;
-        
-        // Download archive files that contain today's date
-        if (IsArchiveFile(fileName) && fileName.Contains(today))
-            return true;
-        
-        return false;
-    }
-
-    private static bool IsArchiveFile(string fileName)
-    {
-        string extensions = config.GetValueOrDefault("ArchiveExtensions", ".zip,.rar,.7z");
-        string[] supportedExtensions = extensions.Split(',');
-        
-        string fileExtension = Path.GetExtension(fileName).ToLower();
-        
-        foreach (string ext in supportedExtensions)
-        {
-            if (fileExtension == ext.Trim().ToLower())
-                return true;
-        }
-        
-        return false;
-    }
-
-    private static bool ExtractPasswordProtectedFile(string filePath, string fileName, string extractPath)
-    {
-        try
-        {
-            string extension = Path.GetExtension(fileName).ToLower();
-            string extractFolder = Path.Combine(extractPath, Path.GetFileNameWithoutExtension(fileName));
-            
-            Directory.CreateDirectory(extractFolder);
-            
-            WriteLog($"Extracting file: {fileName}");
-            Console.WriteLine($"Extracting: {fileName}");
-            
-            bool success = false;
-            
-            switch (extension)
-            {
-                case ".zip":
-                    success = ExtractZipFile(filePath, extractFolder);
-                    break;
-                case ".rar":
-                    success = ExtractRarFile(filePath, extractFolder);
-                    break;
-                case ".7z":
-                    success = Extract7zFile(filePath, extractFolder);
-                    break;
-            }
-            
-            if (success)
-            {
-                WriteLog($"Successfully extracted: {fileName} to {extractFolder}");
-                Console.WriteLine($"Extracted to: {extractFolder}");
-            }
-            else
-            {
-                WriteLog($"Failed to extract: {fileName}");
-                Console.WriteLine($"Failed to extract: {fileName}");
-            }
-            
-            return success;
-        }
-        catch (Exception ex)
-        {
-            WriteLog($"Error extracting {fileName}: {ex.Message}");
-            Console.WriteLine($"Error extracting {fileName}: {ex.Message}");
-            return false;
-        }
-    }
-
-    private static bool ExtractZipFile(string zipPath, string extractPath)
-    {
-        try
-        {
-            // Try built-in .NET extraction first
-            System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, extractPath);
-            return true;
-        }
-        catch (Exception)
-        {
-            // If it fails (likely password protected), try 7-Zip
-            return Extract7zFile(zipPath, extractPath);
-        }
-    }
-
-    private static bool ExtractRarFile(string rarPath, string extractPath)
-    {
-        string filePassword = config.GetValueOrDefault("FilePassword", "");
-        
-        // Try WinRAR first
-        string winrarPath = @"C:\Program Files\WinRAR\WinRAR.exe";
-        if (File.Exists(winrarPath))
-        {
-            string command = $"\"{winrarPath}\" x -p{filePassword} \"{rarPath}\" \"{extractPath}\\\"";
-            return ExecuteCommand(command);
-        }
-        
-        // Try 7-Zip as fallback
-        return Extract7zFile(rarPath, extractPath);
-    }
-
-    private static bool Extract7zFile(string archivePath, string extractPath)
-    {
-        string filePassword = config.GetValueOrDefault("FilePassword", "");
-        
-        string sevenZipPath = @"C:\Program Files\7-Zip\7z.exe";
-        if (!File.Exists(sevenZipPath))
-        {
-            sevenZipPath = @"C:\Program Files (x86)\7-Zip\7z.exe";
-        }
-        
-        if (File.Exists(sevenZipPath))
-        {
-            string command = $"\"{sevenZipPath}\" x \"{archivePath}\" -o\"{extractPath}\" -p{filePassword} -y";
-            return ExecuteCommand(command);
         }
         else
         {
-            WriteLog("7-Zip not found. Please install 7-Zip to extract password-protected archives.");
-            return false;
+            throw new Exception("Failed to connect to SFTP server");
         }
-    }
-
-    private static bool ExecuteCommand(string command)
-    {
-        try
-        {
-            ProcessStartInfo startInfo = new ProcessStartInfo
-            {
-                FileName = "cmd.exe",
-                Arguments = $"/c {command}",
-                UseShellExecute = false,
-                RedirectStandardOutput = true,
-                RedirectStandardError = true,
-                CreateNoWindow = true
-            };
-
-            using (Process process = Process.Start(startInfo))
-            {
-                process.WaitForExit();
-                string output = process.StandardOutput.ReadToEnd();
-                string error = process.StandardError.ReadToEnd();
-                
-                if (!string.IsNullOrEmpty(output))
-                    WriteLog($"Command output: {output}");
-                if (!string.IsNullOrEmpty(error))
-                    WriteLog($"Command error: {error}");
-                
-                return process.ExitCode == 0;
-            }
-        }
-        catch (Exception ex)
-        {
-            WriteLog($"Error executing command: {ex.Message}");
-            return false;
-        }
-    }
-
-    private static void WriteLog(string message)
-    {
-        try
-        {
-            string logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}";
-            File.AppendAllText(logPath, logEntry + Environment.NewLine);
-            
-            // Also write to console if not running silently
-            if (!runContinuously)
-            {
-                Console.WriteLine(logEntry);
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Logging error: {ex.Message}");
-        }
-    }
-
-    private static string FormatFileSize(long bytes)
-    {
-        string[] sizes = { "B", "KB", "MB", "GB", "TB" };
-        double len = bytes;
-        int order = 0;
-        while (len >= 1024 && order < sizes.Length - 1)
-        {
-            order++;
-            len = len / 1024;
-        }
-        return $"{len:0.##} {sizes[order]}";
     }
 }
+```
 
-// Extension method for dictionary
-public static class DictionaryExtensions
+}
+
+// Alternative implementation using manual proxy connection
+public class SftpProxyDownloader
 {
-    public static string GetValueOrDefault(this Dictionary<string, string> dictionary, string key, string defaultValue = "")
+public static void DownloadWithManualProxy(string sftpHost, int sftpPort, string username, string password,
+string proxyHost, int proxyPort, string remoteFilePath, string localFilePath)
+{
+// Create a socket connection through proxy
+var tcpClient = new TcpClient();
+tcpClient.Connect(proxyHost, proxyPort);
+
+```
+    var stream = tcpClient.GetStream();
+    
+    // SOCKS5 handshake (simplified)
+    // This is a basic implementation - consider using a proper SOCKS library for production
+    var handshake = new byte[] { 0x05, 0x01, 0x00 }; // SOCKS5, 1 method, no auth
+    stream.Write(handshake, 0, handshake.Length);
+    
+    var response = new byte[2];
+    stream.Read(response, 0, 2);
+    
+    if (response[0] != 0x05 || response[1] != 0x00)
     {
-        return dictionary.ContainsKey(key) ? dictionary[key] : defaultValue;
+        throw new Exception("SOCKS5 handshake failed");
+    }
+    
+    // Connect request
+    var connectRequest = new List<byte> { 0x05, 0x01, 0x00, 0x03 }; // SOCKS5, connect, reserved, domain
+    connectRequest.Add((byte)sftpHost.Length);
+    connectRequest.AddRange(System.Text.Encoding.ASCII.GetBytes(sftpHost));
+    connectRequest.AddRange(BitConverter.GetBytes((ushort)IPAddress.HostToNetworkOrder((short)sftpPort)));
+    
+    stream.Write(connectRequest.ToArray(), 0, connectRequest.Count);
+    
+    var connectResponse = new byte[10];
+    stream.Read(connectResponse, 0, 10);
+    
+    if (connectResponse[1] != 0x00)
+    {
+        throw new Exception("SOCKS5 connect failed");
+    }
+    
+    // Now use the stream for SSH connection
+    var connectionInfo = new ConnectionInfo(sftpHost, sftpPort, username,
+        new PasswordAuthenticationMethod(username, password));
+    
+    using (var sftpClient = new SftpClient(connectionInfo))
+    {
+        // Use the proxy stream for connection
+        // Note: This approach requires more complex implementation
+        // The SSH.NET library's built-in proxy support is recommended
     }
 }
 ```
