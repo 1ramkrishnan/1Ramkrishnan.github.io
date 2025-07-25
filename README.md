@@ -35,5 +35,5 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 [Résumé](http://cloud.rklab.co.in/s/rkresume)<br />
 [Listen to my Résumé in fun way😉](https://cloud.rklab.co.in/s/resumepodcast)<br />
 
-#### “you will find your purpose where you find your happiness” — 
+#### “you will find your purpose where you find your happiness” 
 #### ✌️
