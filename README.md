@@ -16,9 +16,9 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 ---
 ### Recent Projects
 
-  [SensAI](https://digipin.rklab.co.in)
+  [DigiPin - Geo Location Code](https://digipin.rklab.co.in)
 
-  [SensAI](https://rklab.co.in/ai)
+  [SensAI - Selfhosted AI](https://rklab.co.in/ai)
   
   [rkLaB - Homelab v2](https://rklab.co.in/)
 
