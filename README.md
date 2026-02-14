@@ -16,7 +16,7 @@ My curiosity drives me to explore new technologies and emerging trends in fintec
 ---
 ### Recent Projects
 
-  [DigiPin - Geo Location Code](https://digipin.rklab.co.in)
+  [CarConnect - QR Generator](https://carconnect.rklab.co.in)
 
   [SensAI - Selfhosted AI](https://rklab.co.in/ai)
   
