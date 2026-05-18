@@ -1,30 +1,15 @@
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "dark"   # options: default, air, aqua, contrast, dark, dirt, neon, mint, sunrise
+theme: jekyll-theme-cayman
 
 title: "[rk]"
 description: "Ramkrishnan Thevar — Fintech · Capital Markets · Software Development"
 share-description: "Tech Enthusiast | Software Developer | Freelancer."
 
 google_analytics: G-BBWJS9BN5D
-
-author:
-  name: "Ramkrishnan Thevar"
-  bio: "13+ yrs in fintech · Capital markets · Self-hosting enthusiast"
-  location: "Mumbai, India"
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/1ramkrishnan"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-x-twitter"
-      url: "https://twitter.com/1rkthevar"
-    - label: "Bluesky"
-      icon: "fas fa-fw fa-cloud"
-      url: "https://bsky.app/profile/ramkrishnan.bsky.social"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/1Ramkrishnan"
+twitter_username: 1rkthevar
+github_username: 1Ramkrishnan
+facebook_username: ramkrishnan.thevar
+linkedin_username: 1ramkrishnan
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-seo-tag
