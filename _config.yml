@@ -1,14 +1,8 @@
-theme: jekyll-theme-hacker
-title: [rk]
-description: [Ramkrishnan Thevar.]
-share-description: Tech Enthusiast | Software Developer | Freelancer.
-
-# Google Analytics
+theme: jekyll-theme-cayman
+title: "[rk]"
+description: "Ramkrishnan Thevar — Fintech · Capital Markets · Software Development"
+share-description: "Tech Enthusiast | Software Developer | Freelancer."
 google_analytics: G-BBWJS9BN5D
-
-
-twitter_username: 1rkthevar  
-github_username:  1Ramkrishnan
-facebook_username: ramkrishnan.thevar
+twitter_username: 1rkthevar
+github_username: 1Ramkrishnan
 linkedin_username: 1ramkrishnan
-
