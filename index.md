@@ -1,9 +1,12 @@
 ---
-layout: home
-author_profile: true
+layout: default
 ---
 
+<div align="center">
+
 ## About
+
+</div>
 
 With over 13 years of experience in fintech, I specialize in capital markets, software
 development, and project management. Outside work, I tinker with Raspberry Pi, self-host
@@ -50,4 +53,4 @@ everything I can, and stay current on industry trends through podcasts.
 
 ---
 
-*"you will find your purpose where you find your happiness" ✌️*
+<div align="center"><i>"you will find your purpose where you find your happiness" ✌️</i></div>
