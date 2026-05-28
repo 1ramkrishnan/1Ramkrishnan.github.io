@@ -334,7 +334,7 @@ layout: default
       </p>
     </div>
     <div class="rk-avatar-ring">
-      <img src="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafybeid5mvft7herybuuqa4i5jdtzi46i4guubgnl5ucfenw7x2p3uj4d4" alt="rkLaB logo">
+      <img src="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreietmxaaerlnzq7le6udoswsgadtvjqfjdi47hesxgznssqpza3pne" alt="rkLaB logo">
     </div>
   </div>
 
