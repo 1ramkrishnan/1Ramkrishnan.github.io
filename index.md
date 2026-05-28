@@ -415,11 +415,11 @@ layout: default
       </a>
       <a class="rk-cert" href="https://www.credly.com/badges/5af788da-a8b8-4315-bab3-145b4129537b/public_url" target="_blank">
         <img src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="Credly Badge 1">
-        <span class="rk-cert-name">Credly Badge 1</span>
+        <span class="rk-cert-name">Well-Architected Proficient</span>
       </a>
       <a class="rk-cert" href="https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url" target="_blank">
-        <img src="https://images.credly.com/images/a253b994-caa6-4dd1-bf0e-434dd012b1f6/image.png" alt="Credly Badge 2">
-        <span class="rk-cert-name">Credly Badge 2</span>
+        <img src="https://images.credly.com/images/8f006312-3154-45bf-a845-4a043641e83c/blob" alt="Credly Badge 2">
+        <span class="rk-cert-name">AWS Partner: Technical Accredited - Training Badge</span>
       </a>
     </div>
   </div>
