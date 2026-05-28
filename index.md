@@ -122,17 +122,12 @@ layout: default
     align-items: center;
     justify-content: center;
     background: rgba(29,158,117,0.07);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1D9E75;
+    letter-spacing: -0.05em;
     flex-shrink: 0;
-    overflow: hidden;
-    padding: 10px;
-  }
-
-  .rk-avatar-ring img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 0;
-    display: block;
   }
 
   /* LINKS BAR */
@@ -333,9 +328,7 @@ layout: default
         With over <strong>13 years in fintech</strong>, I specialise in capital markets, software development, and project management. Outside work, I tinker with <strong>Raspberry Pi</strong>, self-host everything I can, and stay current on trends through podcasts.
       </p>
     </div>
-    <div class="rk-avatar-ring">
-      <img src="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreietmxaaerlnzq7le6udoswsgadtvjqfjdi47hesxgznssqpza3pne" alt="rkLaB logo">
-    </div>
+    <div class="rk-avatar-ring">rk.</div>
   </div>
 
   <!-- LINKS -->
