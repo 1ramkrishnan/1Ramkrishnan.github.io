@@ -9,7 +9,8 @@
   <meta property="og:url" content="https://1ramkrishnan.github.io">
   <meta name="theme-color" content="#0b0d12">
   <title>rk.</title>
-  <link rel="icon" type="image/png" href="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -185,19 +186,19 @@
     /* ── CERTS ── */
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
     }
 
     a.cert {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       text-decoration: none;
-      padding: 10px 13px;
+      padding: 14px 16px;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 10px;
       transition: all 0.15s;
       color: inherit;
     }
@@ -207,17 +208,17 @@
       transform: translateY(-1px);
     }
     a.cert img {
-      width: 32px; height: 32px;
+      width: 52px; height: 52px;
       object-fit: contain;
-      border-radius: 5px;
+      border-radius: 7px;
       flex-shrink: 0;
-      background: rgba(255,255,255,0.03);
-      padding: 3px;
+      background: rgba(255,255,255,0.04);
+      padding: 5px;
       transition: transform 0.2s ease;
     }
     a.cert:hover img { transform: scale(1.08); }
-    .cert-name { font-size: 12px; color: #cbd5e1; font-weight: 500; font-family: var(--mono); }
-    .cert-type { font-family: var(--mono); font-size: 9.5px; color: var(--dim); margin-top: 2px; letter-spacing: 0.02em; }
+    .cert-name { font-size: 13px; color: #e2e8f0; font-weight: 500; font-family: var(--mono); }
+    .cert-type { font-family: var(--mono); font-size: 10.5px; color: var(--dim); margin-top: 3px; letter-spacing: 0.02em; }
 
     .cert-note {
       font-size: 10.5px;
@@ -253,7 +254,7 @@
       font-size: 10px;
       color: var(--dim);
       flex-shrink: 0;
-      width: 18px;
+      width: 32px;
       transition: color 0.18s;
     }
     a.proj-row:hover .proj-index { color: var(--teal); }
@@ -386,8 +387,19 @@
       font-weight: 400;
       letter-spacing: 0.02em;
       color: var(--muted);
+      transition: color 0.25s ease;
+      cursor: default;
     }
-    .footer-name span { color: var(--green); }
+    .footer-name span {
+      color: var(--green);
+      transition: text-shadow 0.25s ease;
+    }
+    .footer-name:hover {
+      color: #94a3b8;
+    }
+    .footer-name:hover span {
+      text-shadow: 0 0 6px rgba(48,225,125,0.35);
+    }
 
     .footer-logo {
       width: 28px;
@@ -436,7 +448,7 @@
     <div class="sh"><span class="sh-label">recent projects</span><span class="sh-line"></span></div>
     <div class="proj-list">
       <a class="proj-row" href="https://carconnect.rklab.co.in" target="_blank" rel="noopener">
-        <span class="proj-index">01</span>
+        <span class="proj-index">2023</span>
         <div class="proj-body">
           <div class="proj-head">
             <span class="proj-title">CarConnect — QR Generator</span>
@@ -451,7 +463,7 @@
         </div>
       </a>
       <a class="proj-row" href="https://rklab.co.in/ai" target="_blank" rel="noopener">
-        <span class="proj-index">02</span>
+        <span class="proj-index">2024</span>
         <div class="proj-body">
           <div class="proj-head">
             <span class="proj-title">SensAI — Self-hosted AI</span>
@@ -466,7 +478,7 @@
         </div>
       </a>
       <a class="proj-row" href="https://rklab.co.in/" target="_blank" rel="noopener">
-        <span class="proj-index">03</span>
+        <span class="proj-index">2024</span>
         <div class="proj-body">
           <div class="proj-head">
             <span class="proj-title">rkLaB — Homelab v2</span>
@@ -481,7 +493,7 @@
         </div>
       </a>
       <a class="proj-row" href="https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" target="_blank" rel="noopener">
-        <span class="proj-index">04</span>
+        <span class="proj-index">2025</span>
         <div class="proj-body">
           <div class="proj-head">
             <span class="proj-title">Homelab — Home Automation</span>
