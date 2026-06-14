@@ -228,71 +228,68 @@
     .cert-note a { color: var(--teal); text-decoration: none; }
     .cert-note a:hover { text-decoration: underline; }
 
-    /* ── PROJECT CARDS ── */
-    .proj-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 10px;
-    }
-
-    a.proj-card {
+    /* ── PROJECT LIST ── */
+    .proj-list {
       display: flex;
       flex-direction: column;
-      text-decoration: none;
-      padding: 14px 16px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      transition: all 0.18s;
-      color: inherit;
-      position: relative;
-      overflow: hidden;
-    }
-    a.proj-card::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1.5px;
-      background: transparent;
-      transition: background 0.18s;
-    }
-    a.proj-card:hover {
-      border-color: rgba(45,212,191,0.25);
-      background: rgba(45,212,191,0.045);
-      transform: translateY(-2px);
-    }
-    a.proj-card:hover::after {
-      background: linear-gradient(90deg, transparent, rgba(45,212,191,0.55), transparent);
     }
 
+    a.proj-row {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      text-decoration: none;
+      padding: 12px 4px;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.18s;
+      color: inherit;
+    }
+    .proj-list a.proj-row:last-child { border-bottom: none; }
+    a.proj-row:hover {
+      padding-left: 10px;
+      background: rgba(45,212,191,0.025);
+    }
+    .proj-index {
+      font-size: 10px;
+      color: var(--dim);
+      flex-shrink: 0;
+      width: 18px;
+      transition: color 0.18s;
+    }
+    a.proj-row:hover .proj-index { color: var(--teal); }
+    .proj-body { flex: 1; min-width: 0; }
     .proj-head {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       justify-content: space-between;
-      margin-bottom: 6px;
+      gap: 10px;
+      margin-bottom: 3px;
     }
     .proj-title {
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 500;
       color: #e2e8f0;
       letter-spacing: 0.01em;
+      transition: color 0.18s;
     }
+    a.proj-row:hover .proj-title { color: var(--teal); }
     .proj-arrow {
-      color: var(--teal);
-      opacity: 0.55;
+      color: var(--dim);
+      opacity: 0.7;
       font-size: 11px;
-      transition: transform 0.18s, opacity 0.18s;
+      flex-shrink: 0;
+      transition: transform 0.18s, opacity 0.18s, color 0.18s;
     }
-    a.proj-card:hover .proj-arrow {
+    a.proj-row:hover .proj-arrow {
       opacity: 1;
+      color: var(--teal);
       transform: translate(2px, -2px);
     }
     .proj-desc {
       font-size: 11px;
       color: var(--muted);
       line-height: 1.6;
-      margin-bottom: 10px;
-      flex-grow: 1;
+      margin-bottom: 6px;
     }
     .proj-tags {
       display: flex;
@@ -303,11 +300,12 @@
       font-size: 9.5px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: var(--teal);
-      background: rgba(45,212,191,0.07);
-      border: 1px solid rgba(45,212,191,0.15);
-      border-radius: 4px;
-      padding: 2px 7px;
+      color: var(--dim);
+    }
+    .proj-tag:not(:last-child)::after {
+      content: '·';
+      margin-left: 5px;
+      color: var(--border);
     }
 
     /* ── LINKS GRID ── */
@@ -405,7 +403,7 @@
       .footer-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
     }
     @media (max-width: 440px) {
-      .cert-grid, .link-grid, .proj-grid { grid-template-columns: 1fr; }
+      .cert-grid, .link-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -429,60 +427,72 @@
     <div class="sh"><span class="sh-label">about</span><span class="sh-line"></span></div>
     <div class="about">
       <p>With over <strong>13 years of experience</strong> in the fintech industry, I specialise in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.</p>
-      <p>My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with <strong>Raspberry Pi</strong> and self-hosting projects, finding it rewarding to create and experiment with my own creations.</p>
+      <p>My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with Raspberry Pi and self-hosting projects, finding it rewarding to create and experiment with my own creations.</p>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section>
     <div class="sh"><span class="sh-label">recent projects</span><span class="sh-line"></span></div>
-    <div class="proj-grid">
-      <a class="proj-card" href="https://carconnect.rklab.co.in">
-        <div class="proj-head">
-          <span class="proj-title">CarConnect — QR Generator</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <p class="proj-desc">A QR-based vehicle contact system that lets people reach a vehicle owner instantly by scanning a sticker, without exposing personal phone numbers.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">QR Codes</span>
-          <span class="proj-tag">Privacy</span>
-          <span class="proj-tag">Web App</span>
-        </div>
-      </a>
-      <a class="proj-card" href="https://rklab.co.in/ai">
-        <div class="proj-head">
-          <span class="proj-title">SensAI — Self-hosted AI</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <p class="proj-desc">An n8n-based AI agent chatbot running entirely on the homelab, with anti-hallucination prompting, date-anchored web search, and feedback handled via ntfy.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">n8n</span>
-          <span class="proj-tag">LLM</span>
-          <span class="proj-tag">Automation</span>
+    <div class="proj-list">
+      <a class="proj-row" href="https://carconnect.rklab.co.in" target="_blank" rel="noopener">
+        <span class="proj-index">01</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <span class="proj-title">CarConnect — QR Generator</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A QR-based vehicle contact system that lets people reach a vehicle owner instantly by scanning a sticker, without exposing personal phone numbers.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">QR Codes</span>
+            <span class="proj-tag">Privacy</span>
+            <span class="proj-tag">Web App</span>
+          </div>
         </div>
       </a>
-      <a class="proj-card" href="https://rklab.co.in/">
-        <div class="proj-head">
-          <span class="proj-title">rkLaB — Homelab v2</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <p class="proj-desc">My personal self-hosted infrastructure: a live status dashboard, media stack, security tooling, and a growing set of services across multiple home servers.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">Docker</span>
-          <span class="proj-tag">Cloudflare</span>
-          <span class="proj-tag">Self-hosting</span>
+      <a class="proj-row" href="https://rklab.co.in/ai" target="_blank" rel="noopener">
+        <span class="proj-index">02</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <span class="proj-title">SensAI — Self-hosted AI</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">An n8n-based AI agent chatbot running entirely on the homelab, with anti-hallucination prompting, date-anchored web search, and feedback handled via ntfy.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">n8n</span>
+            <span class="proj-tag">LLM</span>
+            <span class="proj-tag">Automation</span>
+          </div>
         </div>
       </a>
-      <a class="proj-card" href="https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via">
-        <div class="proj-head">
-          <span class="proj-title">Homelab — Home Automation</span>
-          <span class="proj-arrow">↗</span>
+      <a class="proj-row" href="https://rklab.co.in/" target="_blank" rel="noopener">
+        <span class="proj-index">03</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <span class="proj-title">rkLaB — Homelab v2</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">My personal self-hosted infrastructure: a live status dashboard, media stack, security tooling, and a growing set of services across multiple home servers.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Docker</span>
+            <span class="proj-tag">Cloudflare</span>
+            <span class="proj-tag">Self-hosting</span>
+          </div>
         </div>
-        <p class="proj-desc">A write-up on my self-hosting journey — from a single Raspberry Pi to a multi-machine setup running media automation, monitoring, and home automation tools.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">Raspberry Pi</span>
-          <span class="proj-tag">Writeup</span>
-          <span class="proj-tag">LinkedIn</span>
+      </a>
+      <a class="proj-row" href="https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via" target="_blank" rel="noopener">
+        <span class="proj-index">04</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <span class="proj-title">Homelab — Home Automation</span>
+            <span class="proj-arrow">↗</span>
+          </div>
+          <p class="proj-desc">A write-up on my self-hosting journey — from a single Raspberry Pi to a multi-machine setup running media automation, monitoring, and home automation tools.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Raspberry Pi</span>
+            <span class="proj-tag">Writeup</span>
+            <span class="proj-tag">LinkedIn</span>
+          </div>
         </div>
       </a>
     </div>
@@ -492,27 +502,27 @@
   <section>
     <div class="sh"><span class="sh-label">certifications</span><span class="sh-line"></span></div>
     <div class="cert-grid">
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification" target="_blank" rel="noopener">
         <img src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/mean.png" alt="MEAN Stack">
         <div><div class="cert-name">MEAN Stack</div><div class="cert-type">Full-stack Development</div></div>
       </a>
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification" target="_blank" rel="noopener">
         <img src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/aspnet.png" alt="ASP.NET">
         <div><div class="cert-name">ASP.NET</div><div class="cert-type">Microsoft Web Framework</div></div>
       </a>
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification" target="_blank" rel="noopener">
         <img src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150,150&ssl=1" alt="PM Essentials">
         <div><div class="cert-name">PM Essentials</div><div class="cert-type">Project Management</div></div>
       </a>
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification" target="_blank" rel="noopener">
         <img src="https://raw.githubusercontent.com/1ramkrishnan/1Ramkrishnan.github.io/master/images/lsswb150.png" alt="Lean Six Sigma">
         <div><div class="cert-name">Lean Six Sigma White Belt</div><div class="cert-type">Process Excellence</div></div>
       </a>
-      <a class="cert" href="https://www.credly.com/badges/5af788da-a8b8-4315-bab3-145b4129537b/public_url">
+      <a class="cert" href="https://www.credly.com/badges/5af788da-a8b8-4315-bab3-145b4129537b/public_url" target="_blank" rel="noopener">
         <img src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="AWS Well-Architected">
         <div><div class="cert-name">Well-Architected Proficient</div><div class="cert-type">AWS · Credly</div></div>
       </a>
-      <a class="cert" href="https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url">
+      <a class="cert" href="https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url" target="_blank" rel="noopener">
         <img src="https://images.credly.com/images/8f006312-3154-45bf-a845-4a043641e83c/blob" alt="AWS Partner Technical">
         <div><div class="cert-name">AWS Technical Accredited</div><div class="cert-type">AWS Partner · Credly</div></div>
       </a>
@@ -523,14 +533,14 @@
   <section>
     <div class="sh"><span class="sh-label">links</span><span class="sh-line"></span></div>
     <div class="link-grid">
-      <a class="linkcard" href="http://cloud.rklab.co.in/s/rkresume">Résumé <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://cloud.rklab.co.in/s/resumepodcast">Résumé Podcast <span class="linkcard-arrow">🎙</span></a>
-      <a class="linkcard" href="http://send.rklab.co.in">Share Files <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://rklab.co.in">rklab.co.in <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://status.rklab.co.in">Homelab Status <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://www.linkedin.com/in/1ramkrishnan">LinkedIn <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://bsky.app/profile/ramkrishnan.bsky.social">Bluesky <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://twitter.com/1rkthevar">Twitter / X <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="http://cloud.rklab.co.in/s/rkresume" target="_blank" rel="noopener">Résumé <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://cloud.rklab.co.in/s/resumepodcast" target="_blank" rel="noopener">Résumé Podcast <span class="linkcard-arrow">🎙</span></a>
+      <a class="linkcard" href="http://send.rklab.co.in" target="_blank" rel="noopener">Share Files <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://rklab.co.in" target="_blank" rel="noopener">rklab.co.in <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://status.rklab.co.in" target="_blank" rel="noopener">Homelab Status <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://www.linkedin.com/in/1ramkrishnan" target="_blank" rel="noopener">LinkedIn <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://bsky.app/profile/ramkrishnan.bsky.social" target="_blank" rel="noopener">Bluesky <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://twitter.com/1rkthevar" target="_blank" rel="noopener">Twitter / X <span class="linkcard-arrow">↗</span></a>
     </div>
   </section>
 
