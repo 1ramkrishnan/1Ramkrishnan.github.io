@@ -3,39 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ramkrishnan Thevar — Fintech · Capital Markets · Software Development">
+  <meta name="description" content="Ramkrishnan Thevar — Tech Enthusiast · Fintech · Self-hoster">
   <meta property="og:title" content="[rk] · Ramkrishnan Thevar">
-  <meta property="og:description" content="Technology Manager · Fintech · Self-hoster">
+  <meta property="og:description" content="Tech Enthusiast · Fintech · Self-hoster">
   <meta property="og:url" content="https://1ramkrishnan.github.io">
-  <meta name="theme-color" content="#0f1115">
+  <meta name="theme-color" content="#0b0d12">
   <title>[rk] | Ramkrishnan Thevar</title>
+  <link rel="icon" type="image/png" href="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
+      --teal: #2dd4bf;
+      --cyan: #22d3ee;
       --green: #30e17d;
-      --bg: #0f1115;
+      --bg: #0b0d12;
       --surface: rgba(255,255,255,0.025);
+      --surface-2: rgba(255,255,255,0.04);
       --border: rgba(255,255,255,0.07);
       --text: #c8d3e0;
       --muted: #64748b;
       --dim: #475569;
       --heading: #f0f4f8;
-      --mono: 'IBM Plex Mono', monospace;
-      --sans: 'IBM Plex Sans', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
     }
 
     html { scroll-behavior: smooth; }
 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 6px rgba(48,225,125,0.15); }
+      50% { text-shadow: 0 0 14px rgba(48,225,125,0.45); }
+    }
+    @keyframes drawLine {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: var(--sans);
+      font-family: var(--mono);
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
     }
 
     /* grid bg */
@@ -44,164 +69,77 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(48,225,125,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(48,225,125,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(45,212,191,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45,212,191,0.035) 1px, transparent 1px);
       background-size: 48px 48px;
       pointer-events: none;
       z-index: 0;
     }
 
+    /* ambient glow */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -10%;
+      right: -10%;
+      width: 50vw;
+      height: 50vw;
+      max-width: 600px;
+      max-height: 600px;
+      background: radial-gradient(circle, rgba(45,212,191,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      animation: ambientPulse 8s ease-in-out infinite;
+    }
+    @keyframes ambientPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
     .wrap {
       position: relative;
       z-index: 1;
-      max-width: 860px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 0 1.5rem 5rem;
+      padding: 3.5rem 1.5rem 3rem;
     }
-
-    /* ── NAV ── */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.4rem 0 1.3rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 3.5rem;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--dim);
-      text-decoration: none;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      transition: color 0.15s;
-    }
-    .nav-links a:hover { color: var(--green); }
 
     /* ── HERO ── */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: flex-start;
-      gap: 2.5rem;
-      padding-bottom: 3rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--green);
-      border: 1px solid rgba(48,225,125,0.2);
-      background: rgba(48,225,125,0.05);
-      padding: 3px 11px 3px 9px;
-      border-radius: 20px;
-      margin-bottom: 1.1rem;
-      letter-spacing: 0.04em;
-    }
-
-    .dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--green);
-      flex-shrink: 0;
-      animation: pulse 2.2s ease-in-out infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1;}50%{opacity:0.25;} }
-
-    .eyebrow {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--green);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .eyebrow::before {
-      content: '';
-      width: 18px; height: 1px;
-      background: var(--green);
-      flex-shrink: 0;
-    }
-
     h1 {
-      font-family: var(--sans);
-      font-size: clamp(2.1rem, 5.5vw, 3.6rem);
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
+      font-family: var(--mono);
+      font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
       color: var(--heading);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.7rem;
+      animation: fadeUp 0.6s ease-out both;
     }
-    h1 em { font-style: normal; color: var(--green); }
+    h1 .surname { color: var(--heading); }
+    h1 .dot-accent { color: var(--green); font-weight: 400; animation: glow 2.4s ease-in-out infinite; }
 
-    .subtitle {
+    .tagline {
       font-family: var(--mono);
-      font-size: 11px;
-      color: var(--dim);
-      margin-bottom: 1.4rem;
-      letter-spacing: 0.04em;
-    }
-    .subtitle span { color: var(--muted); }
-
-    .bio {
-      font-size: 14.5px;
-      line-height: 1.8;
-      color: #94a3b8;
-      max-width: 520px;
-    }
-    .bio strong { color: #cbd5e1; font-weight: 600; }
-
-    /* ── MONOGRAM BADGE ── */
-    .badge {
-      width: 82px; height: 82px;
-      border-radius: 14px;
-      border: 1px solid rgba(48,225,125,0.2);
-      background: rgba(48,225,125,0.04);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      gap: 3px;
-    }
-    .badge .initials {
-      font-family: var(--mono);
-      font-size: 24px;
-      font-weight: 600;
-      color: var(--green);
-      line-height: 1;
-      letter-spacing: -0.04em;
-    }
-    .badge .badge-sub {
-      font-family: var(--mono);
-      font-size: 8px;
-      color: var(--green);
-      opacity: 0.4;
-      letter-spacing: 0.1em;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
       text-transform: uppercase;
+      margin-bottom: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      animation: fadeUp 0.6s ease-out 0.1s both;
     }
+    .tagline .sep { color: var(--dim); }
 
     /* ── LINK PILLS ── */
     .links {
       display: flex;
       flex-wrap: wrap;
       gap: 7px;
-      margin-top: 1.6rem;
+      margin-top: 0.5rem;
+      animation: fadeUp 0.6s ease-out 0.2s both;
     }
 
     a.pill {
@@ -217,21 +155,31 @@
       letter-spacing: 0.02em;
     }
     a.pill:hover {
-      color: var(--green);
-      border-color: rgba(48,225,125,0.3);
-      background: rgba(48,225,125,0.05);
+      color: var(--teal);
+      border-color: rgba(45,212,191,0.3);
+      background: rgba(45,212,191,0.05);
+      transform: translateY(-1px);
     }
     a.pill.primary {
-      color: var(--green);
-      border-color: rgba(48,225,125,0.3);
-      background: rgba(48,225,125,0.07);
+      color: var(--teal);
+      border-color: rgba(45,212,191,0.3);
+      background: rgba(45,212,191,0.07);
     }
     a.pill.primary:hover {
-      background: rgba(48,225,125,0.13);
+      background: rgba(45,212,191,0.13);
     }
 
     /* ── SECTION HEADER ── */
-    section { margin-top: 2.75rem; }
+    section {
+      margin-top: 3rem;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
     .sh {
       display: flex;
@@ -242,7 +190,7 @@
     .sh-label {
       font-family: var(--mono);
       font-size: 10px;
-      color: var(--green);
+      color: var(--teal);
       letter-spacing: 0.14em;
       text-transform: uppercase;
       white-space: nowrap;
@@ -250,90 +198,39 @@
     .sh-line {
       flex: 1;
       height: 1px;
-      background: linear-gradient(90deg, rgba(48,225,125,0.2) 0%, transparent 100%);
+      background: linear-gradient(90deg, rgba(45,212,191,0.2) 0%, transparent 100%);
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.8s ease-out 0.15s;
+    }
+    section.in-view .sh-line {
+      transform: scaleX(1);
     }
 
-    /* ── PROJECTS ── */
-    .proj-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      gap: 9px;
-    }
-
-    a.proj {
-      display: block;
-      text-decoration: none;
-      padding: 0.9rem 1rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      transition: all 0.15s;
-      position: relative;
-      overflow: hidden;
-      color: inherit;
-    }
-    a.proj::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1.5px;
-      background: transparent;
-      transition: background 0.15s;
-    }
-    a.proj:hover {
-      border-color: rgba(48,225,125,0.25);
-      background: rgba(48,225,125,0.04);
-      transform: translateY(-1px);
-    }
-    a.proj:hover::after {
-      background: linear-gradient(90deg, transparent, rgba(48,225,125,0.55), transparent);
-    }
-
-    .proj-name {
-      font-size: 13px;
-      font-weight: 600;
-      color: #e2e8f0;
-      margin-bottom: 4px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .proj-arrow { color: var(--green); opacity: 0.55; font-size: 11px; }
-    .proj-desc {
+    /* ── ABOUT ── */
+    .about {
       font-family: var(--mono);
-      font-size: 10.5px;
-      color: var(--dim);
-      line-height: 1.5;
+      font-size: 13px;
+      line-height: 1.85;
+      color: #94a3b8;
     }
-
-    /* ── GITHUB STATS ── */
-    .stats-wrap {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.1rem;
-      display: flex;
-      justify-content: center;
-    }
-    .stats-wrap img {
-      border-radius: 6px;
-      max-width: 100%;
-      display: block;
-    }
+    .about p { margin-bottom: 1rem; }
+    .about strong { color: #cbd5e1; font-weight: 600; }
+    .about p:last-child { margin-bottom: 0; }
 
     /* ── CERTS ── */
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 8px;
     }
 
     a.cert {
       display: flex;
       align-items: center;
-      gap: 11px;
+      gap: 12px;
       text-decoration: none;
-      padding: 9px 13px;
+      padding: 10px 13px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -341,23 +238,97 @@
       color: inherit;
     }
     a.cert:hover {
-      border-color: rgba(48,225,125,0.22);
-      background: rgba(48,225,125,0.04);
+      border-color: rgba(45,212,191,0.22);
+      background: rgba(45,212,191,0.04);
+      transform: translateY(-1px);
     }
     a.cert img {
-      width: 28px; height: 28px;
+      width: 32px; height: 32px;
       object-fit: contain;
-      border-radius: 4px;
+      border-radius: 5px;
       flex-shrink: 0;
+      background: rgba(255,255,255,0.03);
+      padding: 3px;
+      transition: transform 0.2s ease;
     }
-    .cert-name { font-size: 12px; color: #cbd5e1; font-weight: 500; }
-    .cert-type { font-family: var(--mono); font-size: 10px; color: var(--dim); margin-top: 2px; }
+    a.cert:hover img { transform: scale(1.08); }
+    .cert-name { font-size: 12px; color: #cbd5e1; font-weight: 500; font-family: var(--mono); }
+    .cert-type { font-family: var(--mono); font-size: 9.5px; color: var(--dim); margin-top: 2px; letter-spacing: 0.02em; }
+
+    .cert-note {
+      font-size: 10.5px;
+      color: var(--dim);
+      margin-top: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+    .cert-note a { color: var(--teal); text-decoration: none; }
+    .cert-note a:hover { text-decoration: underline; }
+
+    /* ── LINKS GRID ── */
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+    }
+
+    a.linkcard {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      padding: 9px 13px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.15s;
+      color: var(--muted);
+      font-size: 11.5px;
+      font-weight: 400;
+      position: relative;
+      overflow: hidden;
+    }
+    a.linkcard::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1.5px;
+      background: transparent;
+      transition: background 0.15s;
+    }
+    a.linkcard:hover {
+      border-color: rgba(45,212,191,0.18);
+      background: rgba(45,212,191,0.025);
+      color: var(--teal);
+    }
+    a.linkcard:hover::after {
+      background: linear-gradient(90deg, transparent, rgba(45,212,191,0.4), transparent);
+    }
+    .linkcard-arrow { color: var(--dim); opacity: 0.6; font-size: 10px; }
+    a.linkcard:hover .linkcard-arrow { color: var(--teal); opacity: 0.7; }
+
+    .quote {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--teal);
+      opacity: 0.55;
+      font-style: italic;
+      letter-spacing: 0.02em;
+    }
+    .quote em { font-style: normal; }
 
     /* ── FOOTER ── */
     footer {
-      margin-top: 3.5rem;
+      margin-top: 4rem;
       padding-top: 1.75rem;
       border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.4rem;
+    }
+
+    .footer-row {
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -365,90 +336,62 @@
       gap: 0.75rem;
     }
 
-    .quote {
+    .footer-name {
       font-family: var(--mono);
-      font-size: 11px;
-      color: #2d3748;
-      font-style: italic;
+      font-size: 13px;
+      font-weight: 400;
       letter-spacing: 0.02em;
+      color: var(--muted);
     }
-    .quote em { font-style: normal; color: var(--green); opacity: 0.6; }
+    .footer-name span { color: var(--green); }
 
-    .footer-sig {
-      font-family: var(--mono);
-      font-size: 10px;
-      color: #1e293b;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .footer-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      opacity: 0.9;
+      animation: float 4s ease-in-out infinite;
     }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
-      .hero { grid-template-columns: 1fr; }
-      .badge { display: none; }
-      .nav-links { display: none; }
-      footer { flex-direction: column; }
+      .wrap { padding: 3rem 1.25rem 2.5rem; }
+      .footer-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
     }
     @media (max-width: 440px) {
-      .proj-grid, .cert-grid { grid-template-columns: 1fr; }
+      .cert-grid, .link-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- NAV -->
-  <nav>
-    <ul class="nav-links">
-      <li><a href="https://rklab.co.in">rkLaB</a></li>
-      <li><a href="https://status.rklab.co.in">status</a></li>
-      <li><a href="http://cloud.rklab.co.in/s/rkresume">résumé</a></li>
-    </ul>
-  </nav>
-
   <!-- HERO -->
   <div class="hero">
-    <div>
-      <h1>Ramkrishnan<br><em>Thevar.</em></h1>
-      <p class="bio">
-        With over <strong>13 years in fintech</strong>, I specialise in capital markets, software development, and project management.
-        Outside work, I tinker with <strong>Raspberry Pi</strong>, self-host everything I can, and stay current on trends through podcasts.
-      </p>
-      <div class="links">
-        <a class="pill primary" href="http://cloud.rklab.co.in/s/rkresume">résumé ↗</a>
-        <a class="pill" href="http://send.rklab.co.in">share files</a>
-        <a class="pill" href="https://rklab.co.in">rklab.co.in ↗</a>
-        <a class="pill" href="https://chessarena.com/profile/750754">♟ chess</a>
-        <a class="pill" href="https://status.rklab.co.in">● homelab status</a>
-        <a class="pill" href="https://cloud.rklab.co.in/s/resumepodcast" title="Listen to résumé">🎙</a>
-      </div>
+    <h1>Ramkrishnan <span class="surname">Thevar</span><span class="dot-accent">.</span></h1>
+    <div class="tagline">
+      <span>tech enthusiast</span>
+      <span class="sep">·</span>
+      <span>fintech</span>
+      <span class="sep">·</span>
+      <span>selfhoster</span>
     </div>
-    <div class="badge">
-      <span class="initials">rk</span>
-      <span class="badge-sub">rkLaB</span>
+    <div class="links">
+      <a class="pill primary" href="http://cloud.rklab.co.in/s/rkresume">résumé ↗</a>
+      <a class="pill" href="http://send.rklab.co.in">share files</a>
+      <a class="pill" href="https://rklab.co.in">rklab.co.in ↗</a>
+      <a class="pill" href="https://chessarena.com/profile/750754">♟ chess</a>
+      <a class="pill" href="https://status.rklab.co.in">● homelab status</a>
+      <a class="pill" href="https://cloud.rklab.co.in/s/resumepodcast" title="Listen to résumé">🎙 résumé podcast</a>
     </div>
   </div>
 
-  <!-- PROJECTS -->
+  <!-- ABOUT -->
   <section>
-    <div class="sh"><span class="sh-label">projects</span><span class="sh-line"></span></div>
-    <div class="proj-grid">
-      <a class="proj" href="https://carconnect.rklab.co.in">
-        <div class="proj-name">CarConnect — QR Gen <span class="proj-arrow">↗</span></div>
-        <div class="proj-desc">QR-based vehicle contact system</div>
-      </a>
-      <a class="proj" href="https://rklab.co.in/ai">
-        <div class="proj-name">SensAI <span class="proj-arrow">↗</span></div>
-        <div class="proj-desc">Self-hosted AI assistant on homelab</div>
-      </a>
-      <a class="proj" href="https://rklab.co.in/">
-        <div class="proj-name">rkLaB v2 <span class="proj-arrow">↗</span></div>
-        <div class="proj-desc">Personal self-hosted infrastructure</div>
-      </a>
-      <a class="proj" href="https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar">
-        <div class="proj-name">Home Automation <span class="proj-arrow">↗</span></div>
-        <div class="proj-desc">Self-hosting journey writeup on LinkedIn</div>
-      </a>
+    <div class="sh"><span class="sh-label">about</span><span class="sh-line"></span></div>
+    <div class="about">
+      <p>With over <strong>13 years of experience</strong> in the fintech industry, I specialise in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.</p>
+      <p>My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with <strong>Raspberry Pi</strong> and self-hosting projects, finding it rewarding to create and experiment with my own creations.</p>
     </div>
   </section>
 
@@ -456,39 +399,69 @@
   <section>
     <div class="sh"><span class="sh-label">certifications</span><span class="sh-line"></span></div>
     <div class="cert-grid">
-      <a class="cert" href="https://drive.google.com/file/d/1-ArkycQZgtb7_4Jw-Vuw6bB8QLHb6Or2/view">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
         <img src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/mean.png" alt="MEAN Stack">
         <div><div class="cert-name">MEAN Stack</div><div class="cert-type">Full-stack Development</div></div>
       </a>
-      <a class="cert" href="https://drive.google.com/file/d/1-X6IL5UW_Asf6ra6_lbA0K0_W29xNbjS/view">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
         <img src="https://github.com/1ramkrishnan/1Ramkrishnan.github.io/raw/master/images/aspnet.png" alt="ASP.NET">
         <div><div class="cert-name">ASP.NET</div><div class="cert-type">Microsoft Web Framework</div></div>
       </a>
-      <a class="cert" href="https://drive.google.com/file/d/1-EHClNZ8j6YAiBGMnvyKDqPVTUydGBlQ/view">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
         <img src="https://i0.wp.com/www.msicertified.com/wp-content/uploads/2021/10/PMEC.png?resize=150,150&ssl=1" alt="PM Essentials">
         <div><div class="cert-name">PM Essentials</div><div class="cert-type">Project Management</div></div>
       </a>
-      <a class="cert" href="https://drive.google.com/file/d/1pW2_VcX14IB5j_13cmO8lE0toykxCAGS/view">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
         <img src="https://raw.githubusercontent.com/1ramkrishnan/1Ramkrishnan.github.io/master/images/lsswb150.png" alt="Lean Six Sigma">
         <div><div class="cert-name">Lean Six Sigma White Belt</div><div class="cert-type">Process Excellence</div></div>
       </a>
-      <a class="cert" href="https://www.credly.com/badges/5af788da-a8b8-4315-bab3-145b4129537b/public_url">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
         <img src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="AWS Well-Architected">
         <div><div class="cert-name">Well-Architected Proficient</div><div class="cert-type">AWS · Credly</div></div>
       </a>
-      <a class="cert" href="https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url">
-        <img src="https://images.credly.com/images/8f006312-3154-45bf-a845-4a043641e83c/blob" alt="AWS Partner Technical">
+      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+        <img src="https://images.credly.com/images/a253b994-caa6-4dd1-bf0e-434dd012b1f6/image.png" alt="AWS Partner Technical">
         <div><div class="cert-name">AWS Technical Accredited</div><div class="cert-type">AWS Partner · Credly</div></div>
       </a>
     </div>
   </section>
 
+  <!-- LINKS -->
+  <section>
+    <div class="sh"><span class="sh-label">links</span><span class="sh-line"></span></div>
+    <div class="link-grid">
+      <a class="linkcard" href="https://www.linkedin.com/in/1ramkrishnan">LinkedIn <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://bsky.app/profile/ramkrishnan.bsky.social">Bluesky <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://twitter.com/1rkthevar">Twitter / X <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://www.facebook.com/ramkrishnan.thevar">Facebook <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://chessarena.com/profile/750754">ChessArena <span class="linkcard-arrow">♟</span></a>
+      <a class="linkcard" href="http://send.rklab.co.in">Share Files <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="http://cloud.rklab.co.in/s/rkresume">Résumé <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://cloud.rklab.co.in/s/resumepodcast">Résumé Podcast <span class="linkcard-arrow">🎙</span></a>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
-    <p class="quote">"you will find your purpose where you find <em>your happiness</em>" ✌️</p>
-    <span class="footer-sig">rklab · 2026</span>
+    <div class="footer-row">
+      <div class="footer-name">Ramkrishnan Thevar | rk<span>.</span></div>
+      <p class="quote">"you will find your purpose where you find <em>your happiness</em>" ✌️</p>
+    </div>
+    <img class="footer-logo" src="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi" alt="rk logo">
   </footer>
 
 </div>
+<script>
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  sections.forEach(s => observer.observe(s));
+</script>
 </body>
 </html>
