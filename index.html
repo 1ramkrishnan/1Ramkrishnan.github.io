@@ -8,7 +8,7 @@
   <meta property="og:description" content="Tech Enthusiast · Fintech · Self-hoster">
   <meta property="og:url" content="https://1ramkrishnan.github.io">
   <meta name="theme-color" content="#0b0d12">
-  <title>[rk] | Ramkrishnan Thevar</title>
+  <title>rk.</title>
   <link rel="icon" type="image/png" href="https://white-reasonable-meadowlark-810.mypinata.cloud/ipfs/bafkreica2te2x3ybbzj22yoqczylhjqbyrk2zrxcm6ysoipxjf763s3vqi">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -133,42 +133,6 @@
     }
     .tagline .sep { color: var(--dim); }
 
-    /* ── LINK PILLS ── */
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 0.5rem;
-      animation: fadeUp 0.6s ease-out 0.2s both;
-    }
-
-    a.pill {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-      text-decoration: none;
-      padding: 6px 13px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--surface);
-      transition: all 0.15s;
-      letter-spacing: 0.02em;
-    }
-    a.pill:hover {
-      color: var(--teal);
-      border-color: rgba(45,212,191,0.3);
-      background: rgba(45,212,191,0.05);
-      transform: translateY(-1px);
-    }
-    a.pill.primary {
-      color: var(--teal);
-      border-color: rgba(45,212,191,0.3);
-      background: rgba(45,212,191,0.07);
-    }
-    a.pill.primary:hover {
-      background: rgba(45,212,191,0.13);
-    }
-
     /* ── SECTION HEADER ── */
     section {
       margin-top: 3rem;
@@ -263,6 +227,88 @@
     }
     .cert-note a { color: var(--teal); text-decoration: none; }
     .cert-note a:hover { text-decoration: underline; }
+
+    /* ── PROJECT CARDS ── */
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px;
+    }
+
+    a.proj-card {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: all 0.18s;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+    a.proj-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1.5px;
+      background: transparent;
+      transition: background 0.18s;
+    }
+    a.proj-card:hover {
+      border-color: rgba(45,212,191,0.25);
+      background: rgba(45,212,191,0.045);
+      transform: translateY(-2px);
+    }
+    a.proj-card:hover::after {
+      background: linear-gradient(90deg, transparent, rgba(45,212,191,0.55), transparent);
+    }
+
+    .proj-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .proj-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #e2e8f0;
+      letter-spacing: 0.01em;
+    }
+    .proj-arrow {
+      color: var(--teal);
+      opacity: 0.55;
+      font-size: 11px;
+      transition: transform 0.18s, opacity 0.18s;
+    }
+    a.proj-card:hover .proj-arrow {
+      opacity: 1;
+      transform: translate(2px, -2px);
+    }
+    .proj-desc {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+      flex-grow: 1;
+    }
+    .proj-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .proj-tag {
+      font-size: 9.5px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--teal);
+      background: rgba(45,212,191,0.07);
+      border: 1px solid rgba(45,212,191,0.15);
+      border-radius: 4px;
+      padding: 2px 7px;
+    }
 
     /* ── LINKS GRID ── */
     .link-grid {
@@ -359,7 +405,7 @@
       .footer-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
     }
     @media (max-width: 440px) {
-      .cert-grid, .link-grid { grid-template-columns: 1fr; }
+      .cert-grid, .link-grid, .proj-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -376,14 +422,6 @@
       <span class="sep">·</span>
       <span>selfhoster</span>
     </div>
-    <div class="links">
-      <a class="pill primary" href="http://cloud.rklab.co.in/s/rkresume">résumé ↗</a>
-      <a class="pill" href="http://send.rklab.co.in">share files</a>
-      <a class="pill" href="https://rklab.co.in">rklab.co.in ↗</a>
-      <a class="pill" href="https://chessarena.com/profile/750754">♟ chess</a>
-      <a class="pill" href="https://status.rklab.co.in">● homelab status</a>
-      <a class="pill" href="https://cloud.rklab.co.in/s/resumepodcast" title="Listen to résumé">🎙 résumé podcast</a>
-    </div>
   </div>
 
   <!-- ABOUT -->
@@ -392,6 +430,61 @@
     <div class="about">
       <p>With over <strong>13 years of experience</strong> in the fintech industry, I specialise in capital markets, software development, and project management. I excel in application lifecycle management, consistently delivering high-quality software solutions that align with business objectives.</p>
       <p>My curiosity drives me to explore new technologies and emerging trends in fintech, and I stay updated by regularly listening to industry podcasts. I also enjoy learning new skills and tackling challenges. In my spare time, I tinker with <strong>Raspberry Pi</strong> and self-hosting projects, finding it rewarding to create and experiment with my own creations.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="sh"><span class="sh-label">recent projects</span><span class="sh-line"></span></div>
+    <div class="proj-grid">
+      <a class="proj-card" href="https://carconnect.rklab.co.in">
+        <div class="proj-head">
+          <span class="proj-title">CarConnect — QR Generator</span>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <p class="proj-desc">A QR-based vehicle contact system that lets people reach a vehicle owner instantly by scanning a sticker, without exposing personal phone numbers.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">QR Codes</span>
+          <span class="proj-tag">Privacy</span>
+          <span class="proj-tag">Web App</span>
+        </div>
+      </a>
+      <a class="proj-card" href="https://rklab.co.in/ai">
+        <div class="proj-head">
+          <span class="proj-title">SensAI — Self-hosted AI</span>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <p class="proj-desc">An n8n-based AI agent chatbot running entirely on the homelab, with anti-hallucination prompting, date-anchored web search, and feedback handled via ntfy.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">n8n</span>
+          <span class="proj-tag">LLM</span>
+          <span class="proj-tag">Automation</span>
+        </div>
+      </a>
+      <a class="proj-card" href="https://rklab.co.in/">
+        <div class="proj-head">
+          <span class="proj-title">rkLaB — Homelab v2</span>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <p class="proj-desc">My personal self-hosted infrastructure: a live status dashboard, media stack, security tooling, and a growing set of services across multiple home servers.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Docker</span>
+          <span class="proj-tag">Cloudflare</span>
+          <span class="proj-tag">Self-hosting</span>
+        </div>
+      </a>
+      <a class="proj-card" href="https://www.linkedin.com/pulse/self-hosting-freak-ramkrishnan-thevar?utm_source=share&utm_medium=member_ios&utm_campaign=share_via">
+        <div class="proj-head">
+          <span class="proj-title">Homelab — Home Automation</span>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <p class="proj-desc">A write-up on my self-hosting journey — from a single Raspberry Pi to a multi-machine setup running media automation, monitoring, and home automation tools.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Raspberry Pi</span>
+          <span class="proj-tag">Writeup</span>
+          <span class="proj-tag">LinkedIn</span>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -415,12 +508,12 @@
         <img src="https://raw.githubusercontent.com/1ramkrishnan/1Ramkrishnan.github.io/master/images/lsswb150.png" alt="Lean Six Sigma">
         <div><div class="cert-name">Lean Six Sigma White Belt</div><div class="cert-type">Process Excellence</div></div>
       </a>
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
+      <a class="cert" href="https://www.credly.com/badges/5af788da-a8b8-4315-bab3-145b4129537b/public_url">
         <img src="https://images.credly.com/size/680x680/images/b870667f-00a3-48d7-b988-9c02b441b883/image.png" alt="AWS Well-Architected">
         <div><div class="cert-name">Well-Architected Proficient</div><div class="cert-type">AWS · Credly</div></div>
       </a>
-      <a class="cert" href="https://cloud.rklab.co.in/s/rkresume?dir=/Online%20Certification">
-        <img src="https://images.credly.com/images/a253b994-caa6-4dd1-bf0e-434dd012b1f6/image.png" alt="AWS Partner Technical">
+      <a class="cert" href="https://www.credly.com/badges/3f34cc17-619e-4feb-8aff-4ead1b2e50ba/public_url">
+        <img src="https://images.credly.com/images/8f006312-3154-45bf-a845-4a043641e83c/blob" alt="AWS Partner Technical">
         <div><div class="cert-name">AWS Technical Accredited</div><div class="cert-type">AWS Partner · Credly</div></div>
       </a>
     </div>
@@ -430,14 +523,14 @@
   <section>
     <div class="sh"><span class="sh-label">links</span><span class="sh-line"></span></div>
     <div class="link-grid">
+      <a class="linkcard" href="http://cloud.rklab.co.in/s/rkresume">Résumé <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://cloud.rklab.co.in/s/resumepodcast">Résumé Podcast <span class="linkcard-arrow">🎙</span></a>
+      <a class="linkcard" href="http://send.rklab.co.in">Share Files <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://rklab.co.in">rklab.co.in <span class="linkcard-arrow">↗</span></a>
+      <a class="linkcard" href="https://status.rklab.co.in">Homelab Status <span class="linkcard-arrow">↗</span></a>
       <a class="linkcard" href="https://www.linkedin.com/in/1ramkrishnan">LinkedIn <span class="linkcard-arrow">↗</span></a>
       <a class="linkcard" href="https://bsky.app/profile/ramkrishnan.bsky.social">Bluesky <span class="linkcard-arrow">↗</span></a>
       <a class="linkcard" href="https://twitter.com/1rkthevar">Twitter / X <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://www.facebook.com/ramkrishnan.thevar">Facebook <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://chessarena.com/profile/750754">ChessArena <span class="linkcard-arrow">♟</span></a>
-      <a class="linkcard" href="http://send.rklab.co.in">Share Files <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="http://cloud.rklab.co.in/s/rkresume">Résumé <span class="linkcard-arrow">↗</span></a>
-      <a class="linkcard" href="https://cloud.rklab.co.in/s/resumepodcast">Résumé Podcast <span class="linkcard-arrow">🎙</span></a>
     </div>
   </section>
 
